@@ -1,0 +1,747 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><title>Copa 2026 • Executive Match Center Pro</title><style>
+:root{--bg:#050b16;--panel:#081a30;--panel2:#0d2b4f;--gold:#f6c85f;--blue:#38bdf8;--green:#22c55e;--red:#ef4444;--text:#edf5ff;--muted:#9fb3cc;--line:rgba(255,255,255,.14)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top left,#16446f 0,#07111f 42%,#020712 100%);font-family:Inter,Arial,sans-serif;color:var(--text)}body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:46px 46px;pointer-events:none;z-index:-1}nav{position:sticky;top:0;z-index:100;background:rgba(2,7,18,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:14px 26px;display:flex;justify-content:space-between;gap:16px;align-items:center}.logo{font-weight:900}.logo span{color:var(--gold)}.links{display:flex;gap:9px;flex-wrap:wrap}.links a{color:var(--muted);text-decoration:none;font-size:12px;padding:8px 10px;border:1px solid var(--line);border-radius:999px;font-weight:800}.links a:hover{color:#fff;border-color:var(--gold);background:rgba(246,200,95,.1)}.hero{min-height:76vh;padding:78px 7vw 50px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}.badge{display:inline-flex;padding:9px 14px;border:1px solid rgba(246,200,95,.35);background:rgba(246,200,95,.12);border-radius:999px;color:#ffe6a3;font-weight:800;font-size:13px}h1{font-size:clamp(42px,7vw,90px);line-height:.9;margin:18px 0 16px;letter-spacing:-3px}h1 span{background:linear-gradient(90deg,var(--gold),#fff,var(--blue));-webkit-background-clip:text;color:transparent}.lead{font-size:19px;line-height:1.55;color:#c8d8ec;max-width:840px}.card,.hero-card,.kpi-card{border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(16,43,78,.92),rgba(8,21,39,.88));padding:24px;box-shadow:0 25px 80px rgba(0,0,0,.35)}section{padding:54px 7vw;border-top:1px solid var(--line)}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}h2{font-size:clamp(30px,4vw,52px);margin:0;letter-spacing:-1.4px}.sub{color:var(--muted);line-height:1.55;max-width:860px}.kpiGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.kpi{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:22px;padding:18px;position:relative;overflow:hidden}.kpi:after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;background:rgba(56,189,248,.12)}.kpi b{font-size:36px;display:block;color:#fff}.kpi span{color:var(--muted);font-size:12px;font-weight:700}.bar{height:9px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden;margin-top:10px}.fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--blue));border-radius:999px}.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.group-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.group-card{border:1px solid var(--line);border-radius:30px;background:linear-gradient(180deg,rgba(16,43,78,.92),rgba(8,21,39,.9));overflow:hidden;box-shadow:0 22px 70px rgba(0,0,0,.28)}.group-head{padding:22px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);background:linear-gradient(120deg,rgba(246,200,95,.13),rgba(56,189,248,.08))}.big-letter{font-size:66px;font-weight:900;color:var(--gold)}.eyebrow{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:1px}.teams{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.teams span,.pill{border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:#c8d8ec;font-size:12px;font-weight:800}.table-wrap,.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.035)}table{width:100%;border-collapse:collapse;min-width:900px}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:top}th{background:rgba(56,189,248,.12);color:#dff6ff}.score{font-weight:900;color:#fff;text-align:center}.num{color:var(--gold);font-weight:900}.brt{color:#fff;font-weight:900;background:rgba(246,200,95,.08)}.details{color:#c8d8ec}.Finalizado{color:var(--green);font-weight:900}.Programado{color:var(--gold);font-weight:900}.live-feed{height:390px;overflow:auto;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.045);padding:16px}.feed-item{display:flex;gap:12px;border-bottom:1px solid var(--line);padding:12px 4px;color:#c8d8ec}.feed-item b{color:#fff}.pulse{width:10px;height:10px;border-radius:50%;background:var(--green);margin-top:5px;box-shadow:0 0 0 rgba(34,197,94,.7);animation:pulse 2s infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.7)}70%{box-shadow:0 0 0 12px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}.notice{border:1px solid rgba(246,200,95,.38);background:linear-gradient(120deg,rgba(246,200,95,.13),rgba(56,189,248,.08));border-radius:26px;padding:20px;color:#ffe6a3}.shirt{font-size:110px;text-align:center}.brazil-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}.bracket-wrap{overflow:auto;border:1px solid var(--line);border-radius:34px;padding:24px;background:rgba(6,16,31,.65)}.bracket{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;min-width:1050px}.match{border:1px solid var(--line);background:linear-gradient(180deg,rgba(16,43,78,.95),rgba(10,25,46,.94));border-radius:18px;overflow:hidden}.match-top{display:flex;justify-content:space-between;background:#0e315c;padding:8px 10px;color:#dff6ff;font-size:11px;font-weight:900}.match-top strong{color:var(--gold)}.team{display:flex;justify-content:space-between;padding:10px 12px;background:rgba(255,255,255,.05);border-top:1px solid var(--line);font-size:13px;font-weight:800}.venue{padding:8px 10px;color:var(--muted);font-size:11px;border-top:1px solid var(--line)}.trophy{font-size:112px;text-align:center;filter:drop-shadow(0 22px 30px rgba(246,200,95,.26));animation:float 4s ease-in-out infinite}@keyframes float{50%{transform:translateY(-12px)}}@media(max-width:1100px){.hero,.grid2,.brazil-panel,.group-grid{grid-template-columns:1fr}.kpiGrid{grid-template-columns:1fr 1fr}}@media(max-width:760px){.kpiGrid{grid-template-columns:1fr}.links{display:none}}
+
+.bracket.complete-centered{display:grid;grid-template-columns:1.18fr 1fr .9fr .82fr .9fr 1fr 1.18fr;gap:16px;align-items:center;min-width:1680px}
+.round-title{text-align:center;color:#ffe6a3;font-weight:900;font-size:12px;letter-spacing:.9px;margin-bottom:10px;border:1px solid rgba(246,200,95,.35);background:rgba(246,200,95,.1);border-radius:999px;padding:8px 10px}
+.bracket-col{display:flex;flex-direction:column;gap:16px}.bracket-col.tight{gap:24px}.bracket-col.center{align-items:center;justify-content:center;gap:18px}
+.champion-center{width:100%;border:1px solid rgba(246,200,95,.58);border-radius:28px;padding:22px;background:linear-gradient(160deg,rgba(246,200,95,.18),rgba(56,189,248,.08));box-shadow:0 25px 70px rgba(0,0,0,.35);text-align:center}
+.champion-center .cup{font-size:76px;filter:drop-shadow(0 18px 25px rgba(246,200,95,.28))}.champion-center b{display:block;color:var(--gold);font-size:20px;margin:8px 0 12px}.champion-center .blank{height:48px;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:14px;margin-top:14px;display:flex;align-items:center;justify-content:center;color:#c8d8ec;font-weight:900}
+.connector-note{text-align:center;color:#9fb3cc;font-size:11px;line-height:1.35;margin-top:8px}
+@media(max-width:1100px){.bracket.complete-centered{min-width:1500px}}
+
+.group-summary{margin:0 18px 20px;border:1px solid rgba(56,189,248,.35);background:linear-gradient(120deg,rgba(56,189,248,.10),rgba(246,200,95,.07));border-radius:24px;padding:18px;color:#dcecff}
+.group-summary b{color:#fff}
+.group-summary .summary-title{display:flex;align-items:center;gap:8px;font-weight:900;color:var(--gold);margin-bottom:8px}
+.group-summary p{margin:0;color:#c8d8ec;line-height:1.55;font-size:13px}
+.group-summary .tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.group-summary .tag{border:1px solid var(--line);background:rgba(255,255,255,.055);border-radius:999px;padding:6px 9px;font-size:11px;font-weight:800;color:#dff6ff}
+
+
+/* === Melhorias Executive Match Center === */
+.exec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.exec-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:linear-gradient(155deg,rgba(255,255,255,.08),rgba(255,255,255,.035));padding:18px;min-height:112px}.exec-card:before{content:"";position:absolute;right:-38px;top:-38px;width:120px;height:120px;border-radius:50%;background:rgba(246,200,95,.09)}.exec-card small{display:block;color:var(--muted);font-weight:800;font-size:11px;letter-spacing:.6px;text-transform:uppercase}.exec-card strong{display:block;margin-top:8px;font-size:25px;color:#fff}.exec-card em{display:block;margin-top:6px;color:#c8d8ec;font-style:normal;font-size:12px;line-height:1.35}.exec-card.gold{border-color:rgba(246,200,95,.38);background:linear-gradient(155deg,rgba(246,200,95,.16),rgba(255,255,255,.04))}.exec-card.blue{border-color:rgba(56,189,248,.38)}.exec-card.green{border-color:rgba(34,197,94,.38)}.quick-panels{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:18px}.filter-panel{position:sticky;top:66px;z-index:80;border:1px solid var(--line);border-radius:26px;background:rgba(2,7,18,.78);backdrop-filter:blur(15px);padding:16px;margin-bottom:20px}.filter-actions{display:flex;gap:9px;flex-wrap:wrap}.filter-btn{cursor:pointer;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#dff6ff;border-radius:999px;padding:9px 12px;font-size:12px;font-weight:900}.filter-btn.active,.filter-btn:hover{border-color:var(--gold);background:rgba(246,200,95,.13);color:#fff}.today-game td{background:rgba(246,200,95,.075)!important}.today-game td:first-child{box-shadow:inset 4px 0 0 var(--gold)}.hidden-by-filter{display:none!important}.top-scorer-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.scorer-card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(16,43,78,.92),rgba(8,21,39,.88));padding:18px}.scorer-card .rank{color:var(--gold);font-size:12px;font-weight:900}.scorer-card b{display:block;font-size:22px;margin-top:6px}.scorer-card span{color:#c8d8ec;font-size:13px}.scorer-card strong{float:right;font-size:30px;color:#fff}.brasil-card{border:1px solid rgba(34,197,94,.38);border-radius:30px;background:linear-gradient(145deg,rgba(34,197,94,.12),rgba(8,21,39,.9));padding:24px}.scenario-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.scenario{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.055);padding:14px}.scenario b{color:#fff}.scenario p{color:#c8d8ec;font-size:12px;margin:7px 0 0;line-height:1.45}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 18px 20px}.mini-stat{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:16px;padding:10px}.mini-stat small{display:block;color:var(--muted);font-size:10px;font-weight:900;text-transform:uppercase}.mini-stat b{display:block;margin-top:4px;color:#fff;font-size:13px}.legend{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.legend span{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:#dff6ff;background:rgba(255,255,255,.045);font-size:12px;font-weight:800}.legend .confirmed{border-color:rgba(246,200,95,.45);background:rgba(246,200,95,.12)}.legend .projected{border-color:rgba(56,189,248,.35)}.legend .open{color:#9fb3cc}.to-top{position:fixed;right:18px;bottom:18px;z-index:200;border:1px solid var(--line);background:rgba(2,7,18,.86);color:#fff;border-radius:999px;padding:12px 14px;text-decoration:none;font-weight:900;box-shadow:0 15px 45px rgba(0,0,0,.35)}.match.is-projected{opacity:.82}.match.is-confirmed{border-color:rgba(246,200,95,.5);box-shadow:0 0 0 1px rgba(246,200,95,.08)}.feed-badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 7px;font-size:10px;color:#ffe6a3;margin-left:6px}@media(max-width:1100px){.exec-grid,.top-scorer-cards{grid-template-columns:repeat(2,1fr)}.quick-panels,.scenario-grid{grid-template-columns:1fr}.mini-stats{grid-template-columns:1fr 1fr}}@media(max-width:760px){.exec-grid,.top-scorer-cards,.mini-stats{grid-template-columns:1fr}.filter-panel{top:58px}.exec-card strong{font-size:21px}}
+
+/* ===== Executive Match Center Pro ===== */
+.mode-switch{position:fixed;right:18px;bottom:82px;z-index:120;display:flex;gap:8px;background:rgba(2,7,18,.9);border:1px solid var(--line);border-radius:999px;padding:8px;box-shadow:0 18px 50px rgba(0,0,0,.35);backdrop-filter:blur(14px)}
+.mode-switch button,.print-btn{border:1px solid var(--line);background:rgba(255,255,255,.06);color:#dff6ff;border-radius:999px;padding:9px 12px;font-weight:900;font-size:12px;cursor:pointer}
+.mode-switch button.active,.print-btn:hover{background:linear-gradient(90deg,rgba(246,200,95,.24),rgba(56,189,248,.14));border-color:rgba(246,200,95,.55);color:#fff}
+body.board-mode .detail-section,body.board-mode #grupos,body.board-mode #mata-mata,body.board-mode #classificacao,body.board-mode #artilheiro{display:none}
+.director-deck{border:1px solid rgba(246,200,95,.38);background:linear-gradient(135deg,rgba(246,200,95,.13),rgba(56,189,248,.08),rgba(255,255,255,.035));border-radius:34px;padding:24px;box-shadow:0 24px 80px rgba(0,0,0,.32)}
+.director-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.director-panel{border:1px solid var(--line);border-radius:26px;padding:20px;background:rgba(5,14,28,.56)}
+.director-panel h3{margin:0 0 14px;font-size:22px;color:#fff}
+.exec-list{display:grid;gap:10px}
+.exec-list div{border:1px solid var(--line);border-radius:18px;padding:12px;background:rgba(255,255,255,.045);color:#c8d8ec}
+.exec-list b{color:#fff}
+.alert-grid,.power-grid,.timeline-grid,.map-grid,.log-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.alert-card{border:1px solid rgba(246,200,95,.34);border-radius:24px;padding:18px;background:linear-gradient(145deg,rgba(246,200,95,.11),rgba(239,68,68,.07));position:relative;overflow:hidden}
+.alert-card:before{content:"";position:absolute;right:-22px;top:-22px;width:80px;height:80px;border-radius:50%;background:rgba(246,200,95,.12)}
+.alert-card small,.power-card small,.timeline-card small,.map-card small,.log-card small{display:block;color:var(--gold);font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:.7px}
+.alert-card b,.power-card b,.timeline-card b,.map-card b,.log-card b{display:block;color:#fff;margin:8px 0;font-size:18px}
+.alert-card p,.power-card p,.timeline-card p,.map-card p,.log-card p{margin:0;color:#c8d8ec;font-size:13px;line-height:1.45}
+.power-card{border:1px solid var(--line);border-radius:24px;padding:18px;background:linear-gradient(180deg,rgba(16,43,78,.8),rgba(8,21,39,.75))}
+.power-rank{width:42px;height:42px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(246,200,95,.16);border:1px solid rgba(246,200,95,.38);color:#ffe6a3;font-weight:900;margin-bottom:10px}
+.timeline-card{border-left:4px solid var(--gold);border-radius:20px;padding:18px;background:rgba(255,255,255,.05);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.map-card,.log-card{border:1px solid var(--line);border-radius:24px;padding:18px;background:rgba(255,255,255,.045)}
+.group-cenario{margin:0 18px 20px;border:1px solid rgba(246,200,95,.34);background:linear-gradient(120deg,rgba(246,200,95,.10),rgba(34,197,94,.07));border-radius:24px;padding:16px;color:#dcecff}
+.group-cenario b{color:var(--gold)}
+.group-cenario p{margin:6px 0 0;color:#c8d8ec;line-height:1.5;font-size:13px}
+.print-header{display:none}
+.legend-pro{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.legend-pro span{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:11px;font-weight:900}
+.confirmado{background:rgba(34,197,94,.11);color:#bbf7d0}
+.projetado{background:rgba(246,200,95,.12);color:#ffe6a3}
+.aberto{background:rgba(56,189,248,.10);color:#dff6ff}
+@media(max-width:1100px){.director-grid,.alert-grid,.power-grid,.timeline-grid,.map-grid,.log-grid{grid-template-columns:1fr 1fr}.mode-switch{right:12px;bottom:72px}}
+@media(max-width:760px){.director-grid,.alert-grid,.power-grid,.timeline-grid,.map-grid,.log-grid{grid-template-columns:1fr}.mode-switch{left:10px;right:10px;justify-content:center}.mode-switch button,.print-btn{font-size:11px;padding:8px 9px}}
+@media print{
+  nav,.links,.filter-panel,.mode-switch,.backtop,script{display:none!important}
+  body{background:#fff!important;color:#111!important}
+  body:before{display:none!important}
+  section,.hero{padding:18px 22px!important;border-top:1px solid #ddd!important}
+  .card,.hero-card,.kpi-card,.group-card,.director-deck,.director-panel,.exec-card,.alert-card,.power-card,.timeline-card,.map-card,.log-card,.brasil-card{box-shadow:none!important;background:#fff!important;color:#111!important;border-color:#ddd!important}
+  .print-header{display:block!important;padding:18px 22px;border-bottom:2px solid #111;color:#111}
+  .print-only-hide,#grupos,#mata-mata{display:none!important}
+  h1,h2,h3,p,span,td,th,b,strong,em,small{color:#111!important}
+  table{min-width:0!important;font-size:10px}
+  th,td{padding:7px!important;color:#111!important}
+}
+
+
+/* ===== Evolução Executiva Adicional ===== */
+.status-board{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.status-column{border:1px solid var(--line);border-radius:26px;padding:18px;background:rgba(255,255,255,.045)}
+.status-column h3{margin:0 0 12px;font-size:20px}.status-column.classified{border-color:rgba(34,197,94,.42)}.status-column.eliminated{border-color:rgba(239,68,68,.38)}.status-column.risk{border-color:rgba(246,200,95,.42)}
+.status-list{display:flex;gap:8px;flex-wrap:wrap}.status-list span{border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:900;background:rgba(255,255,255,.055)}
+.compare-controls{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin-bottom:18px}.compare-field{display:grid;gap:7px;min-width:220px;flex:1}.compare-field label{font-size:11px;color:var(--gold);font-weight:900;text-transform:uppercase}.compare-field select{width:100%;padding:12px;border-radius:14px;border:1px solid var(--line);background:#071528;color:#fff;font-weight:800}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare-team{border:1px solid var(--line);border-radius:26px;padding:20px;background:linear-gradient(145deg,rgba(16,43,78,.9),rgba(8,21,39,.88))}.compare-team h3{margin:0 0 14px;font-size:26px}.compare-row{display:flex;justify-content:space-between;gap:14px;border-top:1px solid var(--line);padding:10px 0;color:#c8d8ec}.compare-row b{color:#fff;text-align:right}
+.history-line{display:grid;grid-template-columns:100px 1fr 1fr 1fr;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:12px}.history-line:first-child{background:rgba(56,189,248,.1);font-weight:900;color:#dff6ff}.history-current{background:rgba(246,200,95,.075)}
+.decisive-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.decisive-card{border:1px solid rgba(246,200,95,.34);border-radius:24px;padding:18px;background:linear-gradient(150deg,rgba(246,200,95,.11),rgba(56,189,248,.06))}.decisive-card small{color:var(--gold);font-weight:900}.decisive-card b{display:block;font-size:19px;margin:8px 0}.decisive-card p{margin:0;color:#c8d8ec;font-size:13px;line-height:1.45}
+.pressure-meter{height:9px;border-radius:999px;background:rgba(255,255,255,.1);overflow:hidden;margin-top:8px}.pressure-meter span{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--gold),var(--red))}
+.pressure-high{color:#fecaca;font-weight:900}.pressure-medium{color:#fde68a;font-weight:900}.pressure-low{color:#bbf7d0;font-weight:900}
+.brazil-path-highlight{border-color:rgba(34,197,94,.85)!important;box-shadow:0 0 0 2px rgba(34,197,94,.18),0 0 28px rgba(34,197,94,.12)!important;background:linear-gradient(145deg,rgba(34,197,94,.17),rgba(8,21,39,.9))!important}
+tr.brazil-path-highlight td{background:rgba(34,197,94,.11)!important}.brazil-path-label{display:inline-block;margin-left:7px;border:1px solid rgba(34,197,94,.45);border-radius:999px;padding:3px 7px;font-size:10px;color:#bbf7d0;font-weight:900}
+.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.method-card{border:1px solid var(--line);border-radius:22px;padding:18px;background:rgba(255,255,255,.045)}.method-card h3{margin:0 0 9px;font-size:18px}.method-card p{margin:0;color:#c8d8ec;font-size:13px;line-height:1.5}
+@media(max-width:1100px){.status-board,.decisive-grid,.method-grid{grid-template-columns:1fr 1fr}.compare-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.status-board,.decisive-grid,.method-grid{grid-template-columns:1fr}.history-line{grid-template-columns:1fr}.history-line:first-child{display:none}}
+
+</style>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#050b16">
+<meta name="application-name" content="Copa 2026">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+
+</head><body id="top">
+<nav><div class="logo">COPA 2026 <span>TABELAS EXECUTIVAS</span></div><div class="links"><a href="#executivo">Executivo</a><a href="#diretoria">Diretoria</a><a href="#power-ranking">Power Ranking</a><a href="#alertas">Alertas</a><a href="#brasil">Brasil</a><a href="#artilheiro">Artilheiro</a><a href="#classificacao">Classificação</a><a href="#grupos">Grupos</a><a href="#mata-mata">Mata-mata</a></div></nav>
+<header class="hero"><div><div class="badge">📊 Atualização • 22/06/2026 às 07h BRT</div><h1>Tabelas da <span>Copa 2026</span></h1><p class="lead">HTML atualizado com a agenda total dos jogos por grupo: todos os 72 jogos da fase de grupos, incluindo partidas finalizadas e confrontos futuros. Mantidos placares, gols, cartões reportados, classificação, artilharia e chaveamento.</p></div><div class="kpi-card"><div class="kpiGrid" style="grid-template-columns:repeat(2,1fr)"><div class="kpi"><b>40</b><span>jogos finalizados</span></div><div class="kpi"><b>72</b><span>jogos na agenda de grupos</span></div><div class="kpi"><b>123</b><span>gols marcados</span></div><div class="kpi"><b>BRT</b><span>horário de Brasília</span></div></div></div></header>
+<section id="executivo">
+  <div class="section-title"><div><h2>Executive Match Center</h2><p class="sub">Leitura rápida da Copa em 30 segundos, com os principais indicadores, alertas competitivos e próximos eventos relevantes.</p></div></div>
+  <div class="exec-grid">
+    <div class="exec-card gold"><small>Jogos finalizados</small><strong>40 / 104</strong><em>40 partidas concluídas na competição.</em></div>
+    <div class="exec-card blue"><small>Gols marcados</small><strong>123</strong><em>Média atual de 3,08 gols por jogo.</em></div>
+    <div class="exec-card gold"><small>Maior goleada</small><strong>ALE 7 x 1 CUW</strong><em>Alemanha tem o melhor ataque e maior saldo.</em></div>
+    <div class="exec-card green"><small>Destaque da rodada</small><strong>Espanha • 4 x 0</strong><em>Maior vitória da rodada sobre a Arábia Saudita.</em></div>
+    <div class="exec-card"><small>Melhor ataque</small><strong>Alemanha</strong><em>9 gols marcados em 2 jogos.</em></div>
+    <div class="exec-card"><small>Melhor defesa</small><strong>Múltiplas seleções</strong><em>México e Costa do Marfim estão entre as equipes que ainda não sofreram gols.</em></div>
+    <div class="exec-card green"><small>Próximo jogo do Brasil</small><strong>Escócia x Brasil</strong><em>24/06/2026 às 19:00 BRT.</em></div>
+    <div class="exec-card"><small>Status do Brasil</small><strong>1º no Grupo C</strong><em>4 pontos e saldo +3; liderança pelos critérios de desempate.</em></div>
+  </div>
+</section>
+
+
+<section id="mudou-desde-ontem">
+  <div class="section-title">
+    <div>
+      <h2>O que mudou desde ontem</h2>
+      <p class="sub">Resumo executivo das alterações consolidadas após os jogos de 21/06/2026, para leitura rápida da atualização diária.</p>
+    </div>
+  </div>
+
+  <div class="alert-grid">
+    <div class="alert-card">
+      <small>Resultados do dia</small>
+      <b>Quatro partidas concluídas</b>
+      <p>Espanha 4 x 0 Arábia Saudita; Bélgica 0 x 0 Irã; Uruguai 2 x 2 Cabo Verde; Nova Zelândia 1 x 3 Egito.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Mudança de liderança</small>
+      <b>Espanha e Egito assumem a ponta</b>
+      <p>A Espanha passou a liderar o Grupo H, enquanto o Egito assumiu a primeira posição do Grupo G.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Artilharia</small>
+      <b>Oyarzabal e Maxi Araújo sobem</b>
+      <p>Mikel Oyarzabal e Maxi Araújo chegaram a 2 gols e entraram no grupo de perseguidores dos líderes da artilharia.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Números da Copa</small>
+      <b>40 jogos e 123 gols</b>
+      <p>A rodada acrescentou 12 gols ao torneio e elevou o total para 40 partidas finalizadas.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Destaque competitivo</small>
+      <b>Espanha apresenta forte reação</b>
+      <p>Após o empate na estreia, a seleção espanhola respondeu com uma atuação dominante e entrou novamente no grupo das principais candidatas.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Surpresa do dia</small>
+      <b>Cabo Verde segue invicto</b>
+      <p>O empate com o Uruguai confirmou a competitividade de Cabo Verde, que voltou a pontuar contra uma seleção tradicional.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Simulação atualizada</small>
+      <b>França passa a ser a campeã projetada</b>
+      <p>A projeção revisada passou a valorizar qualidade dos adversários, controle das partidas e avaliação da imprensa, sem usar saldo de gols como critério de força.</p>
+    </div>
+
+    <div class="alert-card">
+      <small>Próximo foco</small>
+      <b>Grupos I e J em campo</b>
+      <p>Os jogos de 22/06 poderão alterar a liderança, a lista de classificados e as probabilidades de avanço e título.</p>
+    </div>
+  </div>
+
+  <div class="notice" style="margin-top:18px">
+    📌 <b>Atualização diária:</b> esta seção será renovada após a inclusão dos resultados do dia anterior, destacando somente as mudanças mais relevantes em classificação, artilharia, simulação, classificações e eliminações.
+  </div>
+</section>
+
+
+<section id="publico-executivo">
+  <div class="section-title">
+    <div>
+      <h2>Painel Executivo de Público</h2>
+      <p class="sub">Visão consolidada da presença de público nos 40 jogos finalizados até 22/06/2026 às 07h BRT.</p>
+    </div>
+  </div>
+
+  <div class="exec-grid">
+    <div class="exec-card gold">
+      <small>Público acumulado</small>
+      <strong>2.563.003</strong>
+      <em>Total de espectadores nos 40 jogos concluídos.</em>
+    </div>
+    <div class="exec-card blue">
+      <small>Média por partida</small>
+      <strong>64.075</strong>
+      <em>Média de público por jogo finalizado.</em>
+    </div>
+    <div class="exec-card green">
+      <small>Maior público</small>
+      <strong>80.824</strong>
+      <em>México x África do Sul • Estadio Azteca, Mexico City.</em>
+    </div>
+    <div class="exec-card">
+      <small>Média nos jogos do Brasil</small>
+      <strong>74.494</strong>
+      <em>Média nas duas partidas da Seleção até o momento.</em>
+    </div>
+  </div>
+
+  <div class="quick-panels">
+    <div>
+      <div class="section-title" style="margin:24px 0 14px">
+        <div>
+          <h2 style="font-size:30px">Maiores Públicos</h2>
+          <p class="sub">Cinco partidas com maior presença de torcedores.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Jogo</th><th>Estádio / Cidade</th><th>Público</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td><b>México x África do Sul</b></td><td>Estadio Azteca, Mexico City</td><td><b>80.824</b></td></tr><tr><td class="num">2</td><td><b>Uzbequistão x Colômbia</b></td><td>Estadio Azteca, Mexico City</td><td><b>80.824</b></td></tr><tr><td class="num">3</td><td><b>Brasil x Marrocos</b></td><td>MetLife Stadium, New Jersey</td><td><b>80.663</b></td></tr><tr><td class="num">4</td><td><b>França x Senegal</b></td><td>MetLife Stadium, New Jersey</td><td><b>80.545</b></td></tr><tr><td class="num">5</td><td><b>Estados Unidos x Paraguai</b></td><td>SoFi Stadium, Los Angeles</td><td><b>70.492</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title" style="margin:24px 0 14px">
+        <div>
+          <h2 style="font-size:30px">Brasil em Público</h2>
+          <p class="sub">Presença de torcedores nas partidas da Seleção Brasileira.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Jogo</th><th>Estádio / Cidade</th><th>Público</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><b>Brasil x Marrocos</b></td><td>MetLife Stadium, New Jersey</td><td><b>80.663</b></td></tr><tr><td><b>Brasil x Haiti</b></td><td>Lincoln Financial Field, Philadelphia</td><td><b>68.324</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="notice" style="margin-top:16px">
+        📊 <b>Leitura executiva:</b> a média dos jogos do Brasil está 10.419 espectadores acima da média geral da competição. O menor público registrado até agora foi de 42.942 espectadores em Gana x Panamá, no BMO Field, Toronto.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="status-selecoes">
+  <div class="section-title"><div><h2>Seleções Classificadas, Eliminadas e em Risco</h2><p class="sub">Leitura executiva do cenário consolidado até 22/06/2026 às 07h BRT.</p></div></div>
+  <div class="status-board">
+    <div class="status-column classified"><h3>✅ Classificadas</h3><div class="status-list"><span>México</span><span>Estados Unidos</span><span>Alemanha</span></div><p class="sub">Já garantiram presença no mata-mata antes da rodada final.</p></div>
+    <div class="status-column eliminated"><h3>⛔ Eliminadas</h3><div class="status-list"><span>Haiti</span><span>Turquia</span><span>Tunísia</span></div><p class="sub">Não possuem mais possibilidade matemática de classificação.</p></div>
+    <div class="status-column risk"><h3>⚠️ Em risco ou disputa aberta</h3><div class="status-list"><span>Tchéquia</span><span>África do Sul</span><span>Bósnia</span><span>Catar</span><span>Escócia</span><span>Paraguai</span><span>Equador</span><span>Curaçao</span><span>Suécia</span><span>Bélgica</span><span>Irã</span><span>Nova Zelândia</span><span>Uruguai</span><span>Cabo Verde</span><span>Arábia Saudita</span></div><p class="sub">Dependem da última rodada, de critérios de desempate ou da combinação de resultados.</p></div>
+  </div>
+</section>
+
+<section id="diretoria">
+  <div class="section-title"><div><h2>Modo Diretoria</h2><p class="sub">Visão condensada para reunião executiva: situação geral, Brasil, riscos competitivos e próximos focos sem abrir as tabelas longas.</p></div></div>
+  <div class="director-deck">
+    <div class="director-grid">
+      <div class="director-panel">
+        <h3>Leitura executiva da Copa</h3>
+        <div class="exec-list">
+          <div><b>Competição em início de ciclo:</b> 40 jogos finalizados, com média atual de 3,08 gols por partida.</div>
+          <div><b>Seleção em maior destaque:</b> Alemanha, classificada com 6 pontos e 9 gols marcados após duas rodadas.</div>
+          <div><b>Destaque individual:</b> Lionel Messi, Jonathan David e Deniz Undav seguem na liderança da artilharia com 3 gols.</div>
+          <div><b>Brasil:</b> lidera o Grupo C com 4 pontos e saldo +3 após vencer o Haiti por 3 x 0.</div>
+        </div>
+      </div>
+      <div class="director-panel">
+        <h3>Próximas decisões</h3>
+        <div class="exec-list">
+          <div><b>Escócia x Brasil:</b> confronto decisivo pela liderança e classificação no Grupo C.</div>
+          <div><b>Equador x Alemanha:</b> confronto que definirá a posição final dos alemães no Grupo E.</div>
+          <div><b>Japão x Suécia:</b> confronto decisivo pela classificação no Grupo F.</div>
+          <div><b>Espanha x Uruguai:</b> confronto decisivo pela liderança e classificação no Grupo H.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="alertas">
+  <div class="section-title"><div><h2>Alertas Executivos</h2><p class="sub">Sinais competitivos prioritários para acompanhamento diário.</p></div></div>
+  <div class="alert-grid">
+    <div class="alert-card"><small>Grupo H</small><b>Espanha assume liderança</b><p>A goleada por 4 x 0 colocou a seleção espanhola na ponta com 4 pontos.</p></div>
+    <div class="alert-card"><small>Brasil reage</small><b>Liderança do Grupo C</b><p>A vitória por 3 x 0 sobre o Haiti colocou a Seleção na liderança pelo saldo.</p></div>
+    <div class="alert-card"><small>Grupo D</small><b>Estados Unidos classificados</b><p>O 2 x 0 sobre a Austrália garantiu vaga antecipada no mata-mata.</p></div>
+    <div class="alert-card"><small>Grupo G</small><b>Egito assume liderança</b><p>A vitória por 3 x 1 sobre a Nova Zelândia levou os egípcios a 4 pontos.</p></div>
+  </div>
+</section>
+
+<section id="power-ranking">
+  <div class="section-title"><div><h2>Power Ranking da Copa</h2><p class="sub">Ranking executivo baseado em pontos, saldo, gols marcados, impacto da estreia e leitura competitiva do grupo.</p></div></div>
+  <div class="power-grid">
+    <div class="power-card"><div class="power-rank">1</div><small>Alemanha</small><b>Maior força inicial</b><p>6 pontos, 9 gols marcados e classificação antecipada no Grupo E.</p></div>
+    <div class="power-card"><div class="power-rank">2</div><small>Argentina</small><b>Messi decisivo</b><p>Vitória por 3 x 0 com hat-trick do novo artilheiro da Copa.</p></div>
+    <div class="power-card"><div class="power-rank">3</div><small>Noruega</small><b>Estreia de impacto</b><p>4 x 1 sobre o Iraque, com dois gols de Erling Haaland.</p></div>
+    <div class="power-card"><div class="power-rank">4</div><small>Holanda</small><b>Resposta contundente</b><p>Goleada por 5 x 1 sobre a Suécia e liderança do Grupo F.</p></div>
+    <div class="power-card"><div class="power-rank">5</div><small>França</small><b>Força no segundo tempo</b><p>Vitória por 3 x 1 sobre Senegal, com dois gols de Mbappé.</p></div>
+    <div class="power-card"><div class="power-rank">6</div><small>Estados Unidos</small><b>Classificação antecipada</b><p>Duas vitórias, 6 pontos e saldo +5 no Grupo D.</p></div>
+    <div class="power-card"><div class="power-rank">7</div><small>Brasil</small><b>Reação convincente</b><p>Vitória por 3 x 0 sobre o Haiti e liderança do Grupo C pelo saldo.</p></div>
+    <div class="power-card"><div class="power-rank">8</div><small>Espanha</small><b>Resposta dominante</b><p>Goleada por 4 x 0 sobre a Arábia Saudita e liderança do Grupo H.</p></div>
+  </div>
+</section>
+
+
+<section id="comparador-selecoes">
+  <div class="section-title"><div><h2>Comparador de Seleções</h2><p class="sub">Selecione duas candidatas para comparar campanha, leitura da imprensa, chance de título e dificuldade do caminho.</p></div></div>
+  <div class="compare-controls">
+    <div class="compare-field"><label>Seleção A</label><select id="teamA"></select></div>
+    <div class="compare-field"><label>Seleção B</label><select id="teamB"></select></div>
+  </div>
+  <div class="compare-grid"><div class="compare-team" id="compareA"></div><div class="compare-team" id="compareB"></div></div>
+</section>
+
+<section id="timeline-dia">
+  <div class="section-title"><div><h2>Timeline Diária</h2><p class="sub">Linha do tempo operacional da atualização e dos próximos marcos relevantes.</p></div></div>
+  <div class="timeline-grid">
+    <div class="timeline-card"><small>22/06 • 07h BRT</small><b>Atualização consolidada</b><p>HTML atualizado com resultados de 21/06 e reflexos nos Grupos G e H, artilharia, cartões e KPIs.</p></div>
+    <div class="timeline-card"><small>21/06 • Rodada encerrada</small><b>Espanha, Egito e Cabo Verde em destaque</b><p>Espanha goleou; Egito venceu pela primeira vez em Copas; Cabo Verde voltou a surpreender.</p></div>
+    <div class="timeline-card"><small>Próximo marco Brasil</small><b>24/06 • 19:00 BRT</b><p>Escócia x Brasil definirá a posição final da Seleção no Grupo C.</p></div>
+    <div class="timeline-card"><small>Atualização recomendada</small><b>Após apito final</b><p>Revisar classificação, artilharia, feed e cenários executivos diariamente.</p></div>
+  </div>
+</section>
+
+
+<section id="historico-projecoes">
+  <div class="section-title"><div><h2>Histórico Diário das Projeções</h2><p class="sub">Registro da evolução da leitura editorial conforme os resultados alteram o cenário competitivo.</p></div></div>
+  <div class="table-wrap">
+    <div class="history-line"><div>Data</div><div>Campeã projetada</div><div>Final projetada</div><div>Brasil</div></div>
+    <div class="history-line history-current"><div><b>22/06</b></div><div>França</div><div>Alemanha x França</div><div>Eliminação projetada nas oitavas contra a França</div></div>
+    <div class="history-line"><div>Próxima atualização</div><div>Após resultados de 22/06</div><div>A recalcular</div><div>A recalcular</div></div>
+  </div>
+  <div class="notice" style="margin-top:16px">📌 O histórico será preservado diariamente, permitindo acompanhar como cada rodada altera a campeã projetada, a final e o caminho do Brasil.</div>
+</section>
+
+<section id="mapa-sedes">
+  <div class="section-title"><div><h2>Mapa Executivo das Sedes</h2><p class="sub">Visão sintética por país-sede e cidades já citadas na agenda do HTML.</p></div></div>
+  <div class="map-grid">
+    <div class="map-card"><small>Estados Unidos</small><b>Maior concentração</b><p>Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New Jersey, Philadelphia, San Francisco e Seattle aparecem na agenda.</p></div>
+    <div class="map-card"><small>México</small><b>Abertura e grupos</b><p>Mexico City, Guadalajara e Monterrey aparecem como sedes relevantes na fase de grupos.</p></div>
+    <div class="map-card"><small>Canadá</small><b>Jogos estratégicos</b><p>Toronto e Vancouver aparecem em partidas de grupos com impacto direto em classificação.</p></div>
+    <div class="map-card"><small>Leitura operacional</small><b>Fuso Brasília</b><p>Agenda mantém coluna BRT como referência principal para acompanhamento no Brasil.</p></div>
+  </div>
+</section>
+
+
+<section id="jogos-decisivos-dia">
+  <div class="section-title"><div><h2>Jogos Decisivos do Dia</h2><p class="sub">Partidas de 22/06 com maior potencial de alterar liderança, classificação e simulação do mata-mata.</p></div></div>
+  <div class="decisive-grid">
+    <div class="decisive-card"><small>Grupo J • concluído</small><b>Argentina 2 x 0 Áustria</b><p>A Argentina reforçou a liderança e elevou sua posição entre as candidatas ao título.</p></div>
+    <div class="decisive-card"><small>Grupo I • 18:00 BRT</small><b>França x Iraque</b><p>Uma vitória pode encaminhar a classificação francesa e alterar as probabilidades de título.</p></div>
+    <div class="decisive-card"><small>Grupo I • 21:00 BRT</small><b>Noruega x Senegal</b><p>Confronto direto com impacto na liderança do grupo e no possível caminho da França.</p></div>
+    <div class="decisive-card"><small>Grupo J • 00:00 BRT</small><b>Jordânia x Argélia</b><p>Partida importante na disputa pelas vagas secundárias e pelos melhores terceiros.</p></div>
+  </div>
+</section>
+
+<section id="feed-executivo"><div class="section-title"><div><h2>Feed Executivo Diário</h2><p class="sub">Principais movimentos competitivos consolidados após os jogos de 21/06/2026.</p></div></div><div class="live-feed">
+  <div class="feed-item"><div class="pulse"></div><div><b>Espanha goleia e assume liderança</b><span class="feed-badge">Grupo H</span><br>Lamine Yamal abriu o placar e Oyarzabal marcou duas vezes no 4 x 0 sobre a Arábia Saudita.</div></div>
+  <div class="feed-item"><div class="pulse"></div><div><b>Egito conquista vitória histórica</b><span class="feed-badge">Grupo G</span><br>Salah marcou na vitória por 3 x 1 sobre a Nova Zelândia, a primeira do país em Copas.</div></div>
+  <div class="feed-item"><div class="pulse"></div><div><b>Cabo Verde volta a surpreender</b><span class="feed-badge">Grupo H</span><br>Kevin Pina e Hélio Varela marcaram no empate por 2 x 2 com o Uruguai.</div></div>
+  <div class="feed-item"><div class="pulse"></div><div><b>Bélgica e Irã ficam no zero</b><span class="feed-badge">Grupo G</span><br>Beiranvand brilhou, e a Bélgica terminou com dez após a expulsão de Nathan Ngoy.</div></div>
+  <div class="feed-item"><div class="pulse"></div><div><b>Rodada termina com 12 gols</b><span class="feed-badge">Dia 21/06</span><br>Os quatro jogos elevaram o total da competição para 123 gols em 40 partidas.</div></div>
+</div></section>
+
+<section id="artilheiro"><div class="section-title"><div><h2>Artilharia da Copa</h2><p class="sub">Lionel Messi, Jonathan David e Deniz Undav lideram com 3 gols. Mikel Oyarzabal e Maxi Araújo chegaram a 2 gols após os jogos de 21/06.</p></div></div><div class="top-scorer-cards"><div class="scorer-card"><strong>3</strong><div class="rank">#1</div><b>Lionel Messi</b><span>Argentina • 3 gols</span></div><div class="scorer-card"><strong>3</strong><div class="rank">#1</div><b>Jonathan David</b><span>Canadá • 3 gols</span></div><div class="scorer-card"><strong>3</strong><div class="rank">#1</div><b>Deniz Undav</b><span>Alemanha • 3 gols</span></div></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Jogador</th><th>Seleção</th><th>Gols</th><th>Detalhes</th></tr></thead><tbody><tr><td>1</td><td>Lionel Messi</td><td>Argentina</td><td>3</td><td>17’, 60’ e 76’ vs Argélia</td></tr><tr><td>1</td><td>Jonathan David</td><td>Canadá</td><td>3</td><td>29’, 45+3’ e 90+2’ vs Catar</td></tr><tr><td>3</td><td>Matheus Cunha</td><td>Brasil</td><td>2</td><td>23’ e 36’ vs Haiti</td></tr><tr><td>3</td><td>Vinícius Júnior</td><td>Brasil</td><td>2</td><td>32’ vs Marrocos; 45+3’ vs Haiti</td></tr><tr><td>3</td><td>Ismael Saibari</td><td>Marrocos</td><td>2</td><td>21’ vs Brasil; 2’ vs Escócia</td></tr><tr><td>3</td><td>Johan Manzambi</td><td>Suíça</td><td>2</td><td>75’ e 90’ vs Bósnia e Herzegovina</td></tr><tr><td>2</td><td>Kai Havertz</td><td>Alemanha</td><td>2</td><td>2 gols vs Curaçao</td></tr><tr><td>2</td><td>Kylian Mbappé</td><td>França</td><td>2</td><td>66’, 90+6’ vs Senegal</td></tr><tr><td>2</td><td>Erling Haaland</td><td>Noruega</td><td>2</td><td>29’, 43’ vs Iraque</td></tr><tr><td>2</td><td>Harry Kane</td><td>Inglaterra</td><td>2</td><td>12’ pên. e 42’ vs Croácia</td></tr><tr><td>3</td><td>Brian Brobbey</td><td>Holanda</td><td>2</td><td>5’ e 17’ vs Suécia</td></tr><tr><td>3</td><td>Cody Gakpo</td><td>Holanda</td><td>2</td><td>47’ e 54’ vs Suécia</td></tr><tr><td>3</td><td>Ayase Ueda</td><td>Japão</td><td>2</td><td>30’ e 83’ vs Tunísia</td></tr><tr><td>3</td><td>Crysencio Summerville</td><td>Holanda</td><td>2</td><td>64’ vs Japão; 89’ vs Suécia</td></tr><tr><td>3</td><td>Daichi Kamada</td><td>Japão</td><td>2</td><td>88’ vs Holanda; 4’ vs Tunísia</td></tr><tr><td>4</td><td>Franck Kessié</td><td>Costa do Marfim</td><td>1</td><td>30’ vs Alemanha</td></tr><tr><td>4</td><td>Anthony Elanga</td><td>Suécia</td><td>1</td><td>59’ vs Holanda</td></tr><tr><td>4</td><td>Junya Ito</td><td>Japão</td><td>1</td><td>69’ vs Tunísia</td></tr><tr><td>3</td><td>Mikel Oyarzabal</td><td>Espanha</td><td>2</td><td>21’ e 24’ vs Arábia Saudita</td></tr><tr><td>4</td><td>Lamine Yamal</td><td>Espanha</td><td>1</td><td>10’ vs Arábia Saudita</td></tr><tr><td>4</td><td>Finn Surman</td><td>Nova Zelândia</td><td>1</td><td>15’ vs Egito</td></tr><tr><td>4</td><td>Mostafa Zico</td><td>Egito</td><td>1</td><td>58’ vs Nova Zelândia</td></tr><tr><td>4</td><td>Mohamed Salah</td><td>Egito</td><td>1</td><td>67’ vs Nova Zelândia</td></tr><tr><td>4</td><td>Trezeguet</td><td>Egito</td><td>1</td><td>82’ vs Nova Zelândia</td></tr><tr><td>4</td><td>Agustín Canobbio</td><td>Uruguai</td><td>1</td><td>vs Cabo Verde</td></tr><tr><td>4</td><td>Kevin Pina</td><td>Cabo Verde</td><td>1</td><td>21’ vs Uruguai</td></tr><tr><td>4</td><td>Hélio Varela</td><td>Cabo Verde</td><td>1</td><td>vs Uruguai</td></tr><tr><td>4</td><td>João Neves</td><td>Portugal</td><td>1</td><td>6’ vs RD Congo</td></tr><tr><td>4</td><td>Yoane Wissa</td><td>RD Congo</td><td>1</td><td>45+’ vs Portugal</td></tr><tr><td>4</td><td>Daniel Muñoz</td><td>Colômbia</td><td>1</td><td>40’ vs Uzbequistão</td></tr><tr><td>4</td><td>Abbosbek Fayzullaev</td><td>Uzbequistão</td><td>1</td><td>60’ vs Colômbia</td></tr><tr><td>4</td><td>Luis Díaz</td><td>Colômbia</td><td>1</td><td>65’ vs Uzbequistão</td></tr><tr><td>4</td><td>Jaminton Campaz</td><td>Colômbia</td><td>1</td><td>90+9’ vs Uzbequistão</td></tr><tr><td>4</td><td>Jude Bellingham</td><td>Inglaterra</td><td>1</td><td>47’ vs Croácia</td></tr><tr><td>4</td><td>Marcus Rashford</td><td>Inglaterra</td><td>1</td><td>85’ vs Croácia</td></tr><tr><td>4</td><td>Martin Baturina</td><td>Croácia</td><td>1</td><td>36’ vs Inglaterra</td></tr><tr><td>4</td><td>Petar Musa</td><td>Croácia</td><td>1</td><td>50’ vs Inglaterra</td></tr><tr><td>4</td><td>Caleb Yirenkyi</td><td>Gana</td><td>1</td><td>90+5’ vs Panamá</td></tr><tr><td>4</td><td>Alex Freeman</td><td>Estados Unidos</td><td>1</td><td>43’ vs Austrália</td></tr><tr><td>4</td><td>Matías Galarza</td><td>Paraguai</td><td>1</td><td>2’ vs Turquia</td></tr><tr><td>1</td><td>Folarin Balogun</td><td>Estados Unidos</td><td>2</td><td>31’, 45+5’ vs Paraguai</td></tr><tr><td>1</td><td>Yasin Ayari</td><td>Suécia</td><td>2</td><td>7’, 90+6’ vs Tunísia</td></tr><tr><td>1</td><td>Eli Just</td><td>Nova Zelândia</td><td>2</td><td>7’, 54’ vs Irã</td></tr><tr><td>4</td><td>Felix Nmecha</td><td>Alemanha</td><td>1</td><td>6’ vs Curaçao</td></tr><tr><td>4</td><td>Nico Schlotterbeck</td><td>Alemanha</td><td>1</td><td>vs Curaçao</td></tr><tr><td>4</td><td>Jamal Musiala</td><td>Alemanha</td><td>1</td><td>vs Curaçao</td></tr><tr><td>4</td><td>Nathaniel Brown</td><td>Alemanha</td><td>1</td><td>vs Curaçao</td></tr><tr><td>1</td><td>Deniz Undav</td><td>Alemanha</td><td>3</td><td>1 vs Curaçao; 68’ e 90+4’ vs Costa do Marfim</td></tr><tr><td>4</td><td>Livano Comenencia</td><td>Curaçao</td><td>1</td><td>21’ vs Alemanha</td></tr><tr><td>4</td><td>Virgil van Dijk</td><td>Holanda</td><td>1</td><td>51’ vs Japão</td></tr><tr><td>4</td><td>Crysencio Summerville</td><td>Holanda</td><td>1</td><td>64’ vs Japão</td></tr><tr><td>4</td><td>Keito Nakamura</td><td>Japão</td><td>1</td><td>57’ vs Holanda</td></tr><tr><td>4</td><td>Daichi Kamada</td><td>Japão</td><td>1</td><td>88’ vs Holanda</td></tr><tr><td>4</td><td>Amad Diallo</td><td>Costa do Marfim</td><td>1</td><td>90’ vs Equador</td></tr><tr><td>4</td><td>Alexander Isak</td><td>Suécia</td><td>1</td><td>30’ vs Tunísia</td></tr><tr><td>4</td><td>Viktor Gyökeres</td><td>Suécia</td><td>1</td><td>59’ vs Tunísia</td></tr><tr><td>4</td><td>Mattias Svanberg</td><td>Suécia</td><td>1</td><td>84’ vs Tunísia</td></tr><tr><td>4</td><td>Omar Rekik</td><td>Tunísia</td><td>1</td><td>43’ vs Suécia</td></tr><tr><td>4</td><td>John McGinn</td><td>Escócia</td><td>1</td><td>28’ vs Haiti</td></tr><tr><td>4</td><td>Nestory Irankunda</td><td>Austrália</td><td>1</td><td>27’ vs Turquia</td></tr><tr><td>4</td><td>Connor Metcalfe</td><td>Austrália</td><td>1</td><td>75’ vs Turquia</td></tr><tr><td>4</td><td>Breel Embolo</td><td>Suíça</td><td>1</td><td>17’ pên. vs Catar</td></tr><tr><td>4</td><td>Boualem Khoukhi</td><td>Catar</td><td>1</td><td>90+4’ vs Suíça</td></tr><tr><td>4</td><td>Julián Quiñones</td><td>México</td><td>1</td><td>9’ vs África do Sul</td></tr><tr><td>4</td><td>Raúl Jiménez</td><td>México</td><td>1</td><td>67’ vs África do Sul</td></tr><tr><td>4</td><td>Hwang In-beom</td><td>Coreia do Sul</td><td>1</td><td>67’ vs Tchéquia</td></tr><tr><td>4</td><td>Oh Hyeon-gyu</td><td>Coreia do Sul</td><td>1</td><td>80’ vs Tchéquia</td></tr><tr><td>4</td><td>Ladislav Krejčí</td><td>Tchéquia</td><td>1</td><td>59’ vs Coreia do Sul</td></tr><tr><td>4</td><td>Jovo Lukić</td><td>Bósnia e Herzegovina</td><td>1</td><td>21’ vs Canadá</td></tr><tr><td>4</td><td>Cyle Larin</td><td>Canadá</td><td>1</td><td>78’ vs Bósnia e Herzegovina</td></tr><tr><td>4</td><td>Gio Reyna</td><td>Estados Unidos</td><td>1</td><td>90+7’ vs Paraguai</td></tr><tr><td>4</td><td>Maurício</td><td>Paraguai</td><td>1</td><td>73’ vs Estados Unidos</td></tr><tr><td>4</td><td>Emam Ashour</td><td>Egito</td><td>1</td><td>19’ vs Bélgica</td></tr><tr><td>4</td><td>Abdulelah Al-Amri</td><td>Arábia Saudita</td><td>1</td><td>41’ vs Uruguai</td></tr><tr><td>3</td><td>Maxi Araújo</td><td>Uruguai</td><td>2</td><td>80’ vs Arábia Saudita; vs Cabo Verde</td></tr><tr><td>4</td><td>Ramin Rezaeian</td><td>Irã</td><td>1</td><td>32’ vs Nova Zelândia</td></tr><tr><td>4</td><td>Mohammad Mohebbi</td><td>Irã</td><td>1</td><td>64’ vs Nova Zelândia</td></tr><tr><td>7</td><td>Bradley Barcola</td><td>França</td><td>1</td><td>82’ vs Senegal</td></tr><tr><td>7</td><td>Ibrahim Mbaye</td><td>Senegal</td><td>1</td><td>90+5’ vs França</td></tr><tr><td>7</td><td>Aymen Hussein</td><td>Iraque</td><td>1</td><td>39’ vs Noruega</td></tr><tr><td>7</td><td>Leo Østigård</td><td>Noruega</td><td>1</td><td>76’ vs Iraque</td></tr><tr><td>7</td><td>Romano Schmid</td><td>Áustria</td><td>1</td><td>21’ vs Jordânia</td></tr><tr><td>7</td><td>Ali Olwan</td><td>Jordânia</td><td>1</td><td>50’ vs Áustria</td></tr><tr><td>7</td><td>Marko Arnautović</td><td>Áustria</td><td>1</td><td>90+12’ pên. vs Jordânia</td></tr></tbody></table></div></section>
+
+
+<section id="indice-pressao">
+  <div class="section-title"><div><h2>Índice de Pressão por Seleção</h2><p class="sub">Indicador editorial de urgência competitiva para a próxima partida. Quanto maior o índice, maior a necessidade de resultado.</p></div></div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Seleção</th><th>Pressão</th><th>Nível</th><th>Motivo</th></tr></thead>
+    <tbody>
+      <tr><td><b>Bélgica</b></td><td>92/100<div class="pressure-meter"><span style="width:92%"></span></div></td><td class="pressure-high">Pressão máxima</td><td>Ainda sem vencer e com risco real de eliminação.</td></tr>
+      <tr><td><b>Uruguai</b></td><td>88/100<div class="pressure-meter"><span style="width:88%"></span></div></td><td class="pressure-high">Pressão máxima</td><td>Dois empates e confronto final contra a Espanha.</td></tr>
+      <tr><td><b>Escócia</b></td><td>84/100<div class="pressure-meter"><span style="width:84%"></span></div></td><td class="pressure-high">Muito alta</td><td>Precisa pontuar contra o Brasil para proteger sua classificação.</td></tr>
+      <tr><td><b>Paraguai</b></td><td>78/100<div class="pressure-meter"><span style="width:78%"></span></div></td><td class="pressure-medium">Alta</td><td>Disputa direta com a Austrália pela segunda vaga do Grupo D.</td></tr>
+      <tr><td><b>Brasil</b></td><td>52/100<div class="pressure-meter"><span style="width:52%"></span></div></td><td class="pressure-medium">Moderada</td><td>Está em posição favorável, mas ainda disputa liderança e melhor caminho.</td></tr>
+      <tr><td><b>Alemanha</b></td><td>18/100<div class="pressure-meter"><span style="width:18%"></span></div></td><td class="pressure-low">Confortável</td><td>Já classificada; joga principalmente pela posição final.</td></tr>
+      <tr><td><b>México</b></td><td>15/100<div class="pressure-meter"><span style="width:15%"></span></div></td><td class="pressure-low">Confortável</td><td>Já garantiu vaga no mata-mata.</td></tr>
+      <tr><td><b>Estados Unidos</b></td><td>12/100<div class="pressure-meter"><span style="width:12%"></span></div></td><td class="pressure-low">Confortável</td><td>Classificação antecipada e controle do Grupo D.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="brasil"><div class="section-title"><div><h2>Brasil na Copa</h2><p class="sub">Painel dedicado à Seleção Brasileira, com posição, próximos passos e cenários de classificação.</p></div></div><div class="brasil-card"><div class="brazil-panel"><div><div class="shirt">🇧🇷</div><h2 style="font-size:34px;margin-top:0">Brasil • Grupo C</h2><p class="sub">Situação atual: 1º lugar, 4 pontos, 4 gols marcados, 1 gol sofrido e saldo +3.</p></div><div><div class="exec-grid" style="grid-template-columns:repeat(2,1fr);margin-top:0"><div class="exec-card green"><small>Próximo jogo</small><strong>Escócia x Brasil</strong><em>24/06/2026 • 19:00 BRT</em></div><div class="exec-card"><small>Artilheiros do Brasil</small><strong>Vinícius Jr. e Cunha</strong><em>2 gols cada</em></div><div class="exec-card"><small>Posição</small><strong>1º lugar</strong><em>À frente de Marrocos pelo saldo de gols.</em></div><div class="exec-card gold"><small>Jogo-chave</small><strong>Escócia x Brasil</strong><em>Vitória confirma liderança do grupo.</em></div></div><div class="scenario-grid"><div class="scenario"><b>Melhor cenário</b><p>Vencer a Escócia e confirmar a liderança do Grupo C.</p></div><div class="scenario"><b>Cenário de atenção</b><p>Empate mantém o Brasil classificado e pode preservar a liderança, dependendo de Marrocos.</p></div><div class="scenario"><b>Risco</b><p>Derrota pode tirar o Brasil da liderança e exigir análise dos critérios de desempate.</p></div></div></div></div></div></section>
+<section id="classificacao"><div class="section-title"><div><h2>Classificação Atualizada</h2><p class="sub">Classificação consolidada dos 12 grupos até 22/06/2026 às 07h BRT.</p></div></div><div class="table-wrap"><table><thead><tr><th>Grupo</th><th>Pos</th><th>Seleção</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th><th>Status</th></tr></thead><tbody><tr><td>A</td><td>1</td><td><b>México</b></td><td>6</td><td>2</td><td>2</td><td>0</td><td>0</td><td>3</td><td>0</td><td>+3</td><td>Classificado</td></tr><tr><td>A</td><td>2</td><td><b>Coreia do Sul</b></td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>2</td><td>0</td><td>Zona de classificação</td></tr><tr><td>A</td><td>3</td><td>Tchéquia</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>2</td><td>3</td><td>-1</td><td>Precisa vencer</td></tr><tr><td>A</td><td>4</td><td>África do Sul</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>3</td><td>-2</td><td>Precisa vencer</td></tr><tr><td>B</td><td>1</td><td><b>Canadá</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>7</td><td>1</td><td>+6</td><td>Líder pelo saldo</td></tr><tr><td>B</td><td>2</td><td><b>Suíça</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>5</td><td>2</td><td>+3</td><td>Zona de classificação</td></tr><tr><td>B</td><td>3</td><td>Bósnia e Herzegovina</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>2</td><td>5</td><td>-3</td><td>Precisa vencer</td></tr><tr><td>B</td><td>4</td><td>Catar</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>7</td><td>-6</td><td>Precisa vencer</td></tr><tr><td>C</td><td>1</td><td><b>Brasil</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>4</td><td>1</td><td>+3</td><td>Líder pelo saldo</td></tr><tr><td>C</td><td>2</td><td><b>Marrocos</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>2</td><td>1</td><td>+1</td><td>Zona de classificação</td></tr><tr><td>C</td><td>3</td><td>Escócia</td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>Disputa aberta</td></tr><tr><td>C</td><td>4</td><td>Haiti</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>4</td><td>-4</td><td>Eliminado</td></tr><tr><td>D</td><td>1</td><td><b>Estados Unidos</b></td><td>6</td><td>2</td><td>2</td><td>0</td><td>0</td><td>6</td><td>1</td><td>+5</td><td>Classificado</td></tr><tr><td>D</td><td>2</td><td><b>Austrália</b></td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>2</td><td>0</td><td>Zona de classificação</td></tr><tr><td>D</td><td>3</td><td>Paraguai</td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>4</td><td>-2</td><td>Disputa aberta</td></tr><tr><td>D</td><td>4</td><td>Turquia</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>3</td><td>-3</td><td>Eliminada</td></tr><tr><td>E</td><td>1</td><td><b>Alemanha</b></td><td>6</td><td>2</td><td>2</td><td>0</td><td>0</td><td>9</td><td>2</td><td>+7</td><td>Classificada</td></tr><tr><td>E</td><td>2</td><td><b>Costa do Marfim</b></td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>2</td><td>0</td><td>Zona de classificação</td></tr><tr><td>E</td><td>3</td><td>Equador</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>-1</td><td>Disputa aberta</td></tr><tr><td>E</td><td>4</td><td>Curaçao</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>7</td><td>-6</td><td>Disputa aberta</td></tr><tr><td>F</td><td>1</td><td><b>Holanda</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>7</td><td>3</td><td>+4</td><td>Líder pelo saldo</td></tr><tr><td>F</td><td>2</td><td><b>Japão</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>6</td><td>2</td><td>+4</td><td>Zona de classificação</td></tr><tr><td>F</td><td>3</td><td>Suécia</td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>6</td><td>6</td><td>0</td><td>Disputa aberta</td></tr><tr><td>F</td><td>4</td><td>Tunísia</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>1</td><td>9</td><td>-8</td><td>Eliminada</td></tr><tr><td>G</td><td>1</td><td><b>Egito</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>4</td><td>2</td><td>+2</td><td>Líder</td></tr><tr><td>G</td><td>2</td><td><b>Irã</b></td><td>2</td><td>2</td><td>0</td><td>2</td><td>0</td><td>2</td><td>2</td><td>0</td><td>Zona de classificação</td></tr><tr><td>G</td><td>3</td><td>Bélgica</td><td>2</td><td>2</td><td>0</td><td>2</td><td>0</td><td>1</td><td>1</td><td>0</td><td>Disputa aberta</td></tr><tr><td>G</td><td>4</td><td>Nova Zelândia</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>3</td><td>5</td><td>-2</td><td>Precisa vencer</td></tr><tr><td>H</td><td>1</td><td><b>Espanha</b></td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td>4</td><td>0</td><td>+4</td><td>Líder</td></tr><tr><td>H</td><td>2</td><td><b>Uruguai</b></td><td>2</td><td>2</td><td>0</td><td>2</td><td>0</td><td>3</td><td>3</td><td>0</td><td>Zona de classificação</td></tr><tr><td>H</td><td>3</td><td>Cabo Verde</td><td>2</td><td>2</td><td>0</td><td>2</td><td>0</td><td>2</td><td>2</td><td>0</td><td>Disputa aberta</td></tr><tr><td>H</td><td>4</td><td>Arábia Saudita</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>5</td><td>-4</td><td>Precisa vencer</td></tr><tr><td>I</td><td>1</td><td><b>Noruega</b></td><td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>1</td><td>+3</td><td>Líder pelo saldo</td></tr><tr><td>I</td><td>2</td><td><b>França</b></td><td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td>+2</td><td>Zona de classificação</td></tr><tr><td>I</td><td>3</td><td>Senegal</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>3</td><td>-2</td><td>Precisa reagir</td></tr><tr><td>I</td><td>4</td><td>Iraque</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>-3</td><td>Último pelo saldo</td></tr><tr><td>J</td><td>1</td><td><b>Argentina</b></td><td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>0</td><td>+3</td><td>Líder pelo saldo</td></tr><tr><td>J</td><td>2</td><td><b>Áustria</b></td><td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td>+2</td><td>Zona de classificação</td></tr><tr><td>J</td><td>3</td><td>Jordânia</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>3</td><td>-2</td><td>Precisa reagir</td></tr><tr><td>J</td><td>4</td><td>Argélia</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>3</td><td>-3</td><td>Última pelo saldo</td></tr><tr><td>K</td><td>1</td><td><b>Portugal</b></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>K</td><td>2</td><td><b>RD Congo</b></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>K</td><td>3</td><td>Uzbequistão</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>K</td><td>4</td><td>Colômbia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>L</td><td>1</td><td><b>Inglaterra</b></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>L</td><td>2</td><td><b>Croácia</b></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>L</td><td>3</td><td>Gana</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr><tr><td>L</td><td>4</td><td>Panamá</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Aguardando estreia</td></tr></tbody></table></div></section>
+<section id="grupos"><div class="section-title"><div><h2>Fase de Grupos • Agenda por Grupo</h2><p class="sub">Cada grupo agora exibe a agenda completa com 6 jogos: realizados, pendentes de hoje e futuros.</p></div></div>
+<div class="filter-panel"><div class="filter-actions"><button class="filter-btn active" data-filter="todos">Todos</button><button class="filter-btn" data-filter="finalizados">Finalizados</button><button class="filter-btn" data-filter="hoje">Hoje</button><button class="filter-btn" data-filter="proximos">Próximos</button><button class="filter-btn" data-filter="brasil">Brasil</button><button class="filter-btn" data-filter="decisivos">Grupos com definição próxima</button></div></div>
+<div class="group-grid"><section class="group-card" id="grupo-A">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo A</h2><div class="teams"><span>México</span><span>Coreia do Sul</span><span>Tchéquia</span><span>África do Sul</span></div></div><div class="big-letter">A</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">1</td><td>11/06/2026</td><td>13:00</td><td class="brt">11/06/2026 16:00</td><td><b>México</b> <em>x</em> <b>África do Sul</b></td><td>Estadio Azteca, Mexico City</td><td class="score">2 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Quiñones 9', Raúl Jiménez 67'. Vermelhos: Sithole 49' (AFS), Zwane 84' (AFS), César Montes 92' (MEX). Amarelos confirmados: MEX 1, AFS 2. Público: 80.824 espectadores.</td></tr><tr><td class="num">2</td><td>11/06/2026</td><td>20:00</td><td class="brt">11/06/2026 23:00</td><td><b>Coreia do Sul</b> <em>x</em> <b>Tchéquia</b></td><td>Estadio Akron, Guadalajara</td><td class="score">2 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Ladislav Krejčí 59' (TCH); Hwang In-beom 67' e Oh Hyeon-gyu 80' (COR). Vermelhos: nenhum confirmado. Amarelos: pendente de consolidação oficial. Público: 44.985 espectadores.</td></tr><tr><td class="num">25</td><td>18/06/2026</td><td>12:00</td><td class="brt">18/06/2026 13:00</td><td><b>Tchéquia</b> <em>x</em> <b>África do Sul</b></td><td>Mercedes-Benz Stadium, Atlanta</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Michal Sadílek 6’ (TCH); Teboho Mokoena 83’ pên. (AFS). Amarelo confirmado: Teboho Mokoena (AFS). Vermelhos: nenhum confirmado. Público: 67.442 espectadores.</td></tr><tr><td class="num">28</td><td>18/06/2026</td><td>19:00</td><td class="brt">18/06/2026 22:00</td><td><b>México</b> <em>x</em> <b>Coreia do Sul</b></td><td>Estadio Akron, Guadalajara</td><td class="score">1 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gol: Luis Romo 50’ (MEX). Vermelhos: nenhum confirmado. Amarelos: pendente de consolidação oficial detalhada. Público: 45.522 espectadores.</td></tr><tr><td class="num">53</td><td>24/06/2026</td><td>19:00</td><td class="brt">24/06/2026 22:00</td><td><b>Tchéquia</b> <em>x</em> <b>México</b></td><td>Estadio Azteca, Mexico City</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">54</td><td>24/06/2026</td><td>19:00</td><td class="brt">24/06/2026 22:00</td><td><b>África do Sul</b> <em>x</em> <b>Coreia do Sul</b></td><td>Estadio BBVA, Monterrey</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo A:</b> México 6 pts (J2, SG +3); Coreia do Sul 3 pts (J2, SG 0); Tchéquia 1 pt (J2, SG -1); África do Sul 1 pt (J2, SG -2).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo A</div><p>O México chegou a 6 pontos, garantiu classificação antecipada e lidera isoladamente. A Coreia do Sul permanece com 3 pontos, enquanto Tchéquia e África do Sul somam 1 ponto e precisam vencer na rodada final.</p><div class='tagrow'><span class='tag'>México classificado</span><span class='tag'>Coreia em 2º</span><span class='tag'>Tchéquia precisa vencer</span><span class='tag'>África do Sul precisa vencer</span></div></div><div class="group-cenario"><b>🧭 Cenário provável:</b><p>O México já está no mata-mata. A segunda vaga e a disputa pelos melhores terceiros serão definidas na última rodada.</p></div></section><section class="group-card" id="grupo-B">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo B</h2><div class="teams"><span>Canadá</span><span>Bósnia e Herzegovina</span><span>Catar</span><span>Suíça</span></div></div><div class="big-letter">B</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">3</td><td>12/06/2026</td><td>15:00</td><td class="brt">12/06/2026 16:00</td><td><b>Canadá</b> <em>x</em> <b>Bósnia e Herzegovina</b></td><td>BMO Field, Toronto</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Lukić 21’ (BIH); Cyle Larin 78’ (CAN). Amarelo: Katić 90+3’ (BIH). Vermelhos: nenhum confirmado. Público: 43.002 espectadores.</td></tr><tr><td class="num">5</td><td>13/06/2026</td><td>12:00</td><td class="brt">13/06/2026 16:00</td><td><b>Catar</b> <em>x</em> <b>Suíça</b></td><td>Levi's Stadium, San Francisco</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Breel Embolo 17’ pên. (SUI); Boualem Khoukhi 90+4’ (CAT). Amarelo: Mahmoud Abunada (CAT). Vermelhos: nenhum confirmado. Público: 67.966 espectadores.</td></tr><tr><td class="num">26</td><td>18/06/2026</td><td>12:00</td><td class="brt">18/06/2026 16:00</td><td><b>Suíça</b> <em>x</em> <b>Bósnia e Herzegovina</b></td><td>SoFi Stadium, Los Angeles</td><td class="score">4 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Johan Manzambi 75’ e 90’ (SUI); Rubén Vargas 85’ (SUI); Ermin Mahmić 90+3’ (BIH); Granit Xhaka 90+6’ pên. (SUI). Vermelho: Tarik Muharemović 80’ (BIH). Amarelos confirmados: Amar Dedić 59’, Edin Džeko 61’ (BIH) e Nico Elvedi 65’ (SUI). Público: 70.026 espectadores.</td></tr><tr><td class="num">27</td><td>18/06/2026</td><td>15:00</td><td class="brt">18/06/2026 19:00</td><td><b>Canadá</b> <em>x</em> <b>Catar</b></td><td>BC Place, Vancouver</td><td class="score">6 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Cyle Larin 16’ (CAN); Jonathan David 29’, 45+3’ e 90+2’ (CAN); Nathan Saliba 64’ (CAN); Mohamed Al-Mannai 75’ contra (CAT). Vermelhos: Homam Ahmed 33’ e Assim Madibo 54’ (CAT). Amarelo confirmado: Ahmed Fathy 62’ (CAT). Público: 52.497 espectadores.</td></tr><tr><td class="num">49</td><td>24/06/2026</td><td>12:00</td><td class="brt">24/06/2026 16:00</td><td><b>Suíça</b> <em>x</em> <b>Canadá</b></td><td>BC Place, Vancouver</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">50</td><td>24/06/2026</td><td>12:00</td><td class="brt">24/06/2026 16:00</td><td><b>Bósnia e Herzegovina</b> <em>x</em> <b>Catar</b></td><td>Lumen Field, Seattle</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo B:</b> Canadá 4 pts (J2, SG +6); Suíça 4 pts (J2, SG +3); Bósnia e Herzegovina 1 pt (J2, SG -3); Catar 1 pt (J2, SG -6).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo B</div><p>Canadá e Suíça assumiram o controle do grupo com 4 pontos. O Canadá lidera pelo saldo após a goleada por 6 x 0, enquanto Bósnia e Catar ficaram com 1 ponto e precisam vencer na rodada final.</p><div class='tagrow'><span class='tag'>Canadá líder</span><span class='tag'>Suíça em 2º</span><span class='tag'>Bósnia pressionada</span><span class='tag'>Catar pressionado</span></div></div><div class="group-cenario"><b>🧭 Cenário provável:</b><p>Canadá x Suíça define liderança e pode classificar ambos. Bósnia x Catar é confronto direto de sobrevivência.</p></div></section><section class="group-card" id="grupo-C">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo C</h2><div class="teams"><span>Escócia</span><span>Brasil</span><span>Marrocos</span><span>Haiti</span></div></div><div class="big-letter">C</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">6</td><td>13/06/2026</td><td>18:00</td><td class="brt">13/06/2026 19:00</td><td><b>Brasil</b> <em>x</em> <b>Marrocos</b></td><td>MetLife Stadium, New Jersey</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Ismael Saibari 21’ (MAR); Vinícius Júnior 32’ (BRA). Sem vermelhos confirmados; amarelos a validar em súmula oficial detalhada. Público: 80.663 espectadores.</td></tr><tr><td class="num">7</td><td>13/06/2026</td><td>21:00</td><td class="brt">13/06/2026 22:00</td><td><b>Haiti</b> <em>x</em> <b>Escócia</b></td><td>Gillette Stadium, Boston</td><td class="score">0 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gol: John McGinn 28’ (ESC). Sem vermelhos confirmados; amarelos a validar em súmula oficial detalhada. Público: 64.146 espectadores.</td></tr><tr><td class="num">30</td><td>19/06/2026</td><td>18:00</td><td class="brt">19/06/2026 19:00</td><td><b>Escócia</b> <em>x</em> <b>Marrocos</b></td><td>Gillette Stadium, Boston</td><td class="score">0 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gol: Ismael Saibari 2’ (MAR). Amarelos reportados: Issa Diop (MAR) e Andrew Robertson (ESC). Público: 64.146 espectadores.</td></tr><tr><td class="num">31</td><td>19/06/2026</td><td>20:30</td><td class="brt">19/06/2026 21:30</td><td><b>Brasil</b> <em>x</em> <b>Haiti</b></td><td>Lincoln Financial Field, Philadelphia</td><td class="score">3 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Matheus Cunha 23’ e 36’; Vinícius Júnior 45+3’ (BRA). Amarelos: Douglas Santos (BRA); Carlens Arcus, Frantzdy Pierrot e Danley Jean Jacques (HAI). Público: 68.324 espectadores.</td></tr><tr><td class="num">51</td><td>24/06/2026</td><td>18:00</td><td class="brt">24/06/2026 19:00</td><td><b>Escócia</b> <em>x</em> <b>Brasil</b></td><td>Hard Rock Stadium, Miami</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">52</td><td>24/06/2026</td><td>18:00</td><td class="brt">24/06/2026 19:00</td><td><b>Marrocos</b> <em>x</em> <b>Haiti</b></td><td>Mercedes-Benz Stadium, Atlanta</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo C:</b> Brasil 4 pts (J2, SG +3); Marrocos 4 pts (J2, SG +1); Escócia 3 pts (J2, SG 0); Haiti 0 pts (J2, SG -4).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo C</div><p>Brasil e Marrocos chegaram a 4 pontos, com a Seleção Brasileira na liderança pelo saldo de gols. A Escócia permanece viva com 3 pontos, enquanto o Haiti está eliminado após duas derrotas.</p><div class='tagrow'><span class='tag'>Brasil líder</span><span class='tag'>Marrocos em 2º</span><span class='tag'>Escócia na disputa</span><span class='tag'>Haiti eliminado</span></div></div><div class="group-cenario"><b>🧭 Cenário provável:</b><p>Brasil e Marrocos dependem de seus próprios resultados na rodada final. A Escócia precisa pontuar contra o Brasil para ampliar suas chances de classificação.</p></div></section><section class="group-card" id="grupo-D">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo D</h2><div class="teams"><span>Estados Unidos</span><span>Austrália</span><span>Turquia</span><span>Paraguai</span></div></div><div class="big-letter">D</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">4</td><td>12/06/2026</td><td>18:00</td><td class="brt">12/06/2026 22:00</td><td><b>Estados Unidos</b> <em>x</em> <b>Paraguai</b></td><td>SoFi Stadium, Los Angeles</td><td class="score">4 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Bobadilla contra 7’ (EUA); Balogun 31’ e 45+5’ (EUA); Maurício 73’ (PAR); Reyna 90+7’ (EUA). Amarelos reportados: Gustavo Gómez, Alex Arce e Alonso (PAR). Vermelhos: nenhum confirmado. Público: 70.492 espectadores.</td></tr><tr><td class="num">8</td><td>13/06/2026</td><td>21:00</td><td class="brt">14/06/2026 01:00</td><td><b>Austrália</b> <em>x</em> <b>Turquia</b></td><td>BC Place, Vancouver</td><td class="score">2 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Nestory Irankunda 27’, Connor Metcalfe 75’ (AUS). Sem vermelhos confirmados; amarelos a validar em súmula oficial detalhada. Público: 52.497 espectadores.</td></tr><tr><td class="num">29</td><td>19/06/2026</td><td>12:00</td><td class="brt">19/06/2026 16:00</td><td><b>Estados Unidos</b> <em>x</em> <b>Austrália</b></td><td>Lumen Field, Seattle</td><td class="score">2 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Cameron Burgess contra 11’; Alex Freeman 43’ (EUA). Sete cartões amarelos na partida. Público: 66.925 espectadores.</td></tr><tr><td class="num">32</td><td>19/06/2026</td><td>20:00</td><td class="brt">20/06/2026 00:00</td><td><b>Turquia</b> <em>x</em> <b>Paraguai</b></td><td>Levi's Stadium, San Francisco</td><td class="score">0 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gol: Matías Galarza 2’ (PAR). Vermelho: Miguel Almirón (PAR). Público: 68.827 espectadores.</td></tr><tr><td class="num">59</td><td>25/06/2026</td><td>19:00</td><td class="brt">25/06/2026 23:00</td><td><b>Turquia</b> <em>x</em> <b>Estados Unidos</b></td><td>SoFi Stadium, Los Angeles</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">60</td><td>25/06/2026</td><td>19:00</td><td class="brt">25/06/2026 23:00</td><td><b>Paraguai</b> <em>x</em> <b>Austrália</b></td><td>Levi's Stadium, San Francisco</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo D:</b> Estados Unidos 6 pts (J2, SG +5); Austrália 3 pts (J2, SG 0); Paraguai 3 pts (J2, SG -2); Turquia 0 pts (J2, SG -3).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo D</div><p>Os Estados Unidos garantiram classificação antecipada com duas vitórias. Austrália e Paraguai somam 3 pontos e farão confronto direto, enquanto a Turquia está eliminada.</p><div class='tagrow'><span class='tag'>EUA classificados</span><span class='tag'>Austrália em 2º</span><span class='tag'>Paraguai na disputa</span><span class='tag'>Turquia eliminada</span></div></div><div class="group-cenario"><b>🧭 Cenário provável:</b><p>Paraguai x Austrália será decisivo pela segunda posição. Os Estados Unidos jogam a rodada final já classificados.</p></div></section><section class="group-card" id="grupo-E">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo E</h2><div class="teams"><span>Alemanha</span><span>Costa do Marfim</span><span>Equador</span><span>Curaçao</span></div></div><div class="big-letter">E</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">9</td><td>14/06/2026</td><td>12:00</td><td class="brt">14/06/2026 14:00</td><td><b>Alemanha</b> <em>x</em> <b>Curaçao</b></td><td>NRG Stadium, Houston</td><td class="score">7 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Felix Nmecha 6’, Nico Schlotterbeck, Kai Havertz 2x, Jamal Musiala, Nathaniel Brown e Deniz Undav (ALE); Livano Comenencia 21’ (CUW). Cartões a validar em súmula oficial detalhada. Público: 68.021 espectadores.</td></tr><tr><td class="num">11</td><td>14/06/2026</td><td>19:00</td><td class="brt">14/06/2026 20:00</td><td><b>Costa do Marfim</b> <em>x</em> <b>Equador</b></td><td>Lincoln Financial Field, Philadelphia</td><td class="score">1 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gol: Amad Diallo 90’ (CDM). Cartões a validar em súmula oficial detalhada. Público: 68.274 espectadores.</td></tr><tr><td class="num">34</td><td>20/06/2026</td><td>16:00</td><td class="brt">20/06/2026 17:00</td><td><b>Alemanha</b> <em>x</em> <b>Costa do Marfim</b></td><td>BMO Field, Toronto</td><td class="score">2 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Deniz Undav 68’ e 90+4’ (ALE); Franck Kessié 30’ (CDM). Público: 43.036 espectadores.</td></tr><tr><td class="num">35</td><td>20/06/2026</td><td>19:00</td><td class="brt">20/06/2026 21:00</td><td><b>Equador</b> <em>x</em> <b>Curaçao</b></td><td>Arrowhead Stadium, Kansas City</td><td class="score">0 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Sem gols. Destaque: Eloy Room realizou 15 defesas por Curaçao. Público: 68.598 espectadores.</td></tr><tr><td class="num">55</td><td>25/06/2026</td><td>16:00</td><td class="brt">25/06/2026 17:00</td><td><b>Curaçao</b> <em>x</em> <b>Costa do Marfim</b></td><td>Lincoln Financial Field, Philadelphia</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">56</td><td>25/06/2026</td><td>16:00</td><td class="brt">25/06/2026 17:00</td><td><b>Equador</b> <em>x</em> <b>Alemanha</b></td><td>MetLife Stadium, New Jersey</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo E:</b> Alemanha 6 pts (J2, SG +7); Costa do Marfim 3 pts (J2, SG 0); Equador 1 pt (J2, SG -1); Curaçao 1 pt (J2, SG -6).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo E</div><p>A Alemanha venceu a Costa do Marfim por 2 x 1, chegou a 6 pontos e garantiu classificação antecipada. Equador e Curaçao empataram sem gols e seguem vivos, enquanto a Costa do Marfim permanece em segundo lugar.</p><div class='tagrow'><span class='tag'>Alemanha dominante</span><span class='tag'>Maior saldo</span><span class='tag'>Costa do Marfim em 2º</span><span class='tag'>Equador e Curaçao pressionados</span></div></div><div class="group-cenario"><b>🧭 Cenário provável:</b><p>A Alemanha já está classificada. Costa do Marfim, Equador e Curaçao chegam à última rodada ainda disputando as vagas restantes.</p></div></section><section class="group-card" id="grupo-F">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo F</h2><div class="teams"><span>Holanda</span><span>Japão</span><span>Suécia</span><span>Tunísia</span></div></div><div class="big-letter">F</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">10</td><td>14/06/2026</td><td>15:00</td><td class="brt">14/06/2026 17:00</td><td><b>Holanda</b> <em>x</em> <b>Japão</b></td><td>AT&amp;T Stadium, Dallas</td><td class="score">2 x 2</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Virgil van Dijk 51’ e Crysencio Summerville 64’ (HOL); Keito Nakamura 57’ e Daichi Kamada 88’ (JAP). Cartões a validar em súmula oficial detalhada. Público: 69.285 espectadores.</td></tr><tr><td class="num">12</td><td>14/06/2026</td><td>20:00</td><td class="brt">14/06/2026 23:00</td><td><b>Suécia</b> <em>x</em> <b>Tunísia</b></td><td>Estadio BBVA, Monterrey</td><td class="score">5 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Yasin Ayari 7’ e 90+6’, Alexander Isak 30’, Viktor Gyökeres 59’, Mattias Svanberg 84’ (SUE); Omar Rekik 43’ (TUN). Cartões a validar em súmula oficial detalhada. Público: 50.987 espectadores.</td></tr><tr><td class="num">33</td><td>20/06/2026</td><td>12:00</td><td class="brt">20/06/2026 14:00</td><td><b>Holanda</b> <em>x</em> <b>Suécia</b></td><td>NRG Stadium, Houston</td><td class="score">5 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Brian Brobbey 5’ e 17’, Cody Gakpo 47’ e 54’, Crysencio Summerville 89’ (HOL); Anthony Elanga 59’ (SUE). Público: 68.777 espectadores.</td></tr><tr><td class="num">36</td><td>20/06/2026</td><td>22:00</td><td class="brt">21/06/2026 01:00</td><td><b>Tunísia</b> <em>x</em> <b>Japão</b></td><td>Estadio BBVA, Monterrey</td><td class="score">0 x 4</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Daichi Kamada 4’, Ayase Ueda 30’ e 83’, Junya Ito 69’ (JAP). Público: 51.243 espectadores.</td></tr><tr><td class="num">57</td><td>25/06/2026</td><td>18:00</td><td class="brt">25/06/2026 20:00</td><td><b>Japão</b> <em>x</em> <b>Suécia</b></td><td>AT&amp;T Stadium, Dallas</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">58</td><td>25/06/2026</td><td>18:00</td><td class="brt">25/06/2026 20:00</td><td><b>Tunísia</b> <em>x</em> <b>Holanda</b></td><td>Arrowhead Stadium, Kansas City</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo F:</b> Holanda 4 pts (J2, SG +4); Japão 4 pts (J2, SG +4); Suécia 3 pts (J2, SG 0); Tunísia 0 pts (J2, SG -8).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo F</div><p>Holanda e Japão assumiram as duas primeiras posições com 4 pontos após goleadas na segunda rodada. A Suécia caiu para terceiro com 3 pontos, enquanto a Tunísia foi eliminada.</p><div class='tagrow'><span class='tag'>Suécia líder</span><span class='tag'>Holanda e Japão empatados</span><span class='tag'>Tunísia pressionada</span><span class='tag'>Grupo ainda aberto</span></div></div><div class="group-cenario"><b>🧭 Cenário provável:</b><p>Holanda e Japão chegam à rodada final em vantagem. A Suécia ainda depende de vitória sobre o Japão, enquanto a Tunísia está eliminada.</p></div></section><section class="group-card" id="grupo-G">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo G</h2><div class="teams"><span>Bélgica</span><span>Egito</span><span>Irã</span><span>Nova Zelândia</span></div></div><div class="big-letter">G</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">14</td><td>15/06/2026</td><td>12:00</td><td class="brt">15/06/2026 16:00</td><td><b>Bélgica</b> <em>x</em> <b>Egito</b></td><td>Lumen Field, Seattle</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Emam Ashour 19’ (EGI); Mohamed Hany 66’ contra (BEL). Cartões: pendente de consolidação oficial. Público: 66.775 espectadores.</td></tr><tr><td class="num">16</td><td>15/06/2026</td><td>18:00</td><td class="brt">15/06/2026 22:00</td><td><b>Irã</b> <em>x</em> <b>Nova Zelândia</b></td><td>SoFi Stadium, Los Angeles</td><td class="score">2 x 2</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Eli Just 7’ e 54’ (NZL); Ramin Rezaeian 32’ (IRÃ); Mohammad Mohebbi 64’ (IRÃ). Cartões: pendente de consolidação oficial. Público: 70.108 espectadores.</td></tr><tr><td class="num">38</td><td>21/06/2026</td><td>12:00</td><td class="brt">21/06/2026 16:00</td><td><b>Bélgica</b> <em>x</em> <b>Irã</b></td><td>SoFi Stadium, Los Angeles</td><td class="score">0 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Sem gols. Cartão vermelho: Nathan Ngoy 66’ (BEL). Cartão amarelo: Romelu Lukaku (BEL). Público: 70.317 espectadores.</td></tr><tr><td class="num">40</td><td>21/06/2026</td><td>18:00</td><td class="brt">21/06/2026 22:00</td><td><b>Nova Zelândia</b> <em>x</em> <b>Egito</b></td><td>BC Place, Vancouver</td><td class="score">1 x 3</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Finn Surman 15’ (NZL); Mostafa Zico 58’, Mohamed Salah 67’ e Trezeguet 82’ (EGI). Público: 52.497 espectadores.</td></tr><tr><td class="num">65</td><td>26/06/2026</td><td>20:00</td><td class="brt">27/06/2026 00:00</td><td><b>Egito</b> <em>x</em> <b>Irã</b></td><td>Lumen Field, Seattle</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">66</td><td>26/06/2026</td><td>20:00</td><td class="brt">27/06/2026 00:00</td><td><b>Nova Zelândia</b> <em>x</em> <b>Bélgica</b></td><td>BC Place, Vancouver</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo G:</b> Egito 4 pts (J2, SG +2); Irã 2 pts (J2, SG 0); Bélgica 2 pts (J2, SG 0); Nova Zelândia 1 pt (J2, SG -2).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo G</div><p>O Egito venceu a Nova Zelândia por 3 x 1 e assumiu a liderança com 4 pontos. Bélgica e Irã empataram sem gols e seguem com 2 pontos, enquanto a Nova Zelândia ficou com 1 ponto.</p><div class='tagrow'><span class='tag'>Todos com 1 ponto</span><span class='tag'>Irã e Nova Zelândia com 2 GP</span><span class='tag'>Bélgica pressionada</span><span class='tag'>Disputa aberta</span></div></div></section><section class="group-card" id="grupo-H">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo H</h2><div class="teams"><span>Espanha</span><span>Cabo Verde</span><span>Arábia Saudita</span><span>Uruguai</span></div></div><div class="big-letter">H</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">13</td><td>15/06/2026</td><td>12:00</td><td class="brt">15/06/2026 13:00</td><td><b>Espanha</b> <em>x</em> <b>Cabo Verde</b></td><td>Mercedes-Benz Stadium, Atlanta</td><td class="score">0 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Sem gols. Cartões: pendente de consolidação oficial. Público: 67.640 espectadores.</td></tr><tr><td class="num">15</td><td>15/06/2026</td><td>18:00</td><td class="brt">15/06/2026 19:00</td><td><b>Arábia Saudita</b> <em>x</em> <b>Uruguai</b></td><td>Hard Rock Stadium, Miami</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Abdulelah Al-Amri 41’ (ASA); Maxi Araújo 80’ (URU). Cartões: pendente de consolidação oficial. Público: 62.764 espectadores.</td></tr><tr><td class="num">37</td><td>21/06/2026</td><td>12:00</td><td class="brt">21/06/2026 13:00</td><td><b>Espanha</b> <em>x</em> <b>Arábia Saudita</b></td><td>Mercedes-Benz Stadium, Atlanta</td><td class="score">4 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Lamine Yamal 10’, Mikel Oyarzabal 21’ e 24’, Hassan Al-Tambakti contra 49’ (ESP). Cartões amarelos: Salem Al-Dawsari 30’ e Mohamed Kanno 60’ (ASA). Público: 68.239 espectadores.</td></tr><tr><td class="num">39</td><td>21/06/2026</td><td>18:00</td><td class="brt">21/06/2026 19:00</td><td><b>Uruguai</b> <em>x</em> <b>Cabo Verde</b></td><td>Hard Rock Stadium, Miami</td><td class="score">2 x 2</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Maxi Araújo e Agustín Canobbio (URU); Kevin Pina 21’ e Hélio Varela (CPV). Público: 64.003 espectadores.</td></tr><tr><td class="num">63</td><td>26/06/2026</td><td>19:00</td><td class="brt">26/06/2026 21:00</td><td><b>Cabo Verde</b> <em>x</em> <b>Arábia Saudita</b></td><td>NRG Stadium, Houston</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">64</td><td>26/06/2026</td><td>18:00</td><td class="brt">26/06/2026 21:00</td><td><b>Uruguai</b> <em>x</em> <b>Espanha</b></td><td>Estadio Akron, Guadalajara</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo H:</b> Espanha 4 pts (J2, SG +4); Uruguai 2 pts (J2, SG 0); Cabo Verde 2 pts (J2, SG 0); Arábia Saudita 1 pt (J2, SG -4).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo H</div><p>A Espanha goleou a Arábia Saudita por 4 x 0 e assumiu a liderança. Uruguai e Cabo Verde empataram por 2 x 2 e seguem com 2 pontos, enquanto a Arábia Saudita permanece com 1.</p><div class='tagrow'><span class='tag'>Todos com 1 ponto</span><span class='tag'>Cabo Verde surpreende</span><span class='tag'>Uruguai reage no fim</span><span class='tag'>Disputa aberta</span></div></div></section><section class="group-card" id="grupo-I">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo I</h2><div class="teams"><span>França</span><span>Senegal</span><span>Iraque</span><span>Noruega</span></div></div><div class="big-letter">I</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">17</td><td>16/06/2026</td><td>15:00</td><td class="brt">16/06/2026 16:00</td><td><b>França</b> <em>x</em> <b>Senegal</b></td><td>MetLife Stadium, New Jersey</td><td class="score">3 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Mbappé 66’ e 90+6’, Barcola 82’ (FRA); Ibrahim Mbaye 90+5’ (SEN). Cartões: pendente de consolidação oficial. Público: 80.545 espectadores.</td></tr><tr><td class="num">18</td><td>16/06/2026</td><td>18:00</td><td class="brt">16/06/2026 19:00</td><td><b>Iraque</b> <em>x</em> <b>Noruega</b></td><td>Gillette Stadium, Boston</td><td class="score">1 x 4</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Aymen Hussein 39’ (IRQ); Haaland 29’ e 43’, Østigård 76’, Aymen Hussein 90+6’ contra (NOR). Amarelos: Iraque 1, Noruega 0. Público: 63.106 espectadores.</td></tr><tr><td class="num">42</td><td>22/06/2026</td><td>17:00</td><td class="brt">22/06/2026 18:00</td><td><b>França</b> <em>x</em> <b>Iraque</b></td><td>Lincoln Financial Field, Philadelphia</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">43</td><td>22/06/2026</td><td>20:00</td><td class="brt">22/06/2026 21:00</td><td><b>Noruega</b> <em>x</em> <b>Senegal</b></td><td>MetLife Stadium, New Jersey</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">61</td><td>26/06/2026</td><td>15:00</td><td class="brt">26/06/2026 16:00</td><td><b>Noruega</b> <em>x</em> <b>França</b></td><td>Gillette Stadium, Boston</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">62</td><td>26/06/2026</td><td>15:00</td><td class="brt">26/06/2026 16:00</td><td><b>Senegal</b> <em>x</em> <b>Iraque</b></td><td>BMO Field, Toronto</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo I:</b> Noruega 3 pts (J1, SG +3); França 3 pts (J1, SG +2); Senegal 0 pt (J1, SG -2); Iraque 0 pt (J1, SG -3).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo I</div><p>Noruega e França venceram na estreia. A Noruega lidera pelo saldo após o 4 x 1 sobre o Iraque, enquanto a França aparece em segundo com o 3 x 1 sobre Senegal.</p><div class='tagrow'><span class='tag'>Noruega líder</span><span class='tag'>França em 2º</span><span class='tag'>Haaland e Mbappé com 2</span><span class='tag'>Iraque pressionado</span></div></div></section><section class="group-card" id="grupo-J">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo J</h2><div class="teams"><span>Argentina</span><span>Argélia</span><span>Áustria</span><span>Jordânia</span></div></div><div class="big-letter">J</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">19</td><td>16/06/2026</td><td>20:00</td><td class="brt">16/06/2026 22:00</td><td><b>Argentina</b> <em>x</em> <b>Argélia</b></td><td>Arrowhead Stadium, Kansas City</td><td class="score">3 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Lionel Messi 17’, 60’ e 76’ (ARG). Cartões: pendente de consolidação oficial. Público: 69.045 espectadores.</td></tr><tr><td class="num">20</td><td>16/06/2026</td><td>21:00</td><td class="brt">17/06/2026 01:00</td><td><b>Áustria</b> <em>x</em> <b>Jordânia</b></td><td>Levi's Stadium, San Francisco</td><td class="score">3 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Romano Schmid 21’, Yazan Al-Arab 76’ contra, Arnautović 90+12’ pên. (AUT); Ali Olwan 50’ (JOR). Cartões: pendente de consolidação oficial. Público: 68.527 espectadores.</td></tr><tr><td class="num">41</td><td>22/06/2026</td><td>12:00</td><td class="brt">22/06/2026 14:00</td><td><b>Argentina</b> <em>x</em> <b>Áustria</b></td><td>AT&amp;T Stadium, Dallas</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">44</td><td>22/06/2026</td><td>20:00</td><td class="brt">23/06/2026 00:00</td><td><b>Jordânia</b> <em>x</em> <b>Argélia</b></td><td>Levi's Stadium, San Francisco</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">71</td><td>27/06/2026</td><td>21:00</td><td class="brt">27/06/2026 23:00</td><td><b>Argélia</b> <em>x</em> <b>Áustria</b></td><td>Arrowhead Stadium, Kansas City</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">72</td><td>27/06/2026</td><td>21:00</td><td class="brt">27/06/2026 23:00</td><td><b>Jordânia</b> <em>x</em> <b>Argentina</b></td><td>AT&amp;T Stadium, Dallas</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo J:</b> Argentina 3 pts (J1, SG +3); Áustria 3 pts (J1, SG +2); Jordânia 0 pt (J1, SG -2); Argélia 0 pt (J1, SG -3).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo J</div><p>Argentina e Áustria venceram na estreia. A Argentina lidera pelo saldo após o 3 x 0 sobre a Argélia, com Messi marcando os três gols; a Áustria venceu a Jordânia por 3 x 1.</p><div class='tagrow'><span class='tag'>Argentina líder</span><span class='tag'>Messi artilheiro</span><span class='tag'>Áustria em 2º</span><span class='tag'>Confronto direto na próxima rodada</span></div></div></section><section class="group-card" id="grupo-K">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo K</h2><div class="teams"><span>Portugal</span><span>RD Congo</span><span>Uzbequistão</span><span>Colômbia</span></div></div><div class="big-letter">K</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">21</td><td>17/06/2026</td><td>12:00</td><td class="brt">17/06/2026 14:00</td><td><b>Portugal</b> <em>x</em> <b>RD Congo</b></td><td>NRG Stadium, Houston</td><td class="score">1 x 1</td><td class="Finalizado">Finalizado</td><td class="details">Gols: João Neves 6’ (POR); Yoane Wissa 45+’ (COD). Cartões: pendente de consolidação oficial. Público: 68.777 espectadores.</td></tr><tr><td class="num">24</td><td>17/06/2026</td><td>20:00</td><td class="brt">17/06/2026 23:00</td><td><b>Uzbequistão</b> <em>x</em> <b>Colômbia</b></td><td>Estadio Azteca, Mexico City</td><td class="score">1 x 3</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Daniel Muñoz 40’, Luis Díaz 65’ e Jaminton Campaz 90+9’ (COL); Abbosbek Fayzullaev 60’ (UZB). Cartões: pendente de consolidação oficial. Público: 80.824 espectadores.</td></tr><tr><td class="num">45</td><td>23/06/2026</td><td>12:00</td><td class="brt">23/06/2026 14:00</td><td><b>Portugal</b> <em>x</em> <b>Uzbequistão</b></td><td>NRG Stadium, Houston</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">48</td><td>23/06/2026</td><td>20:00</td><td class="brt">23/06/2026 23:00</td><td><b>Colômbia</b> <em>x</em> <b>RD Congo</b></td><td>Estadio Akron, Guadalajara</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">69</td><td>27/06/2026</td><td>19:30</td><td class="brt">27/06/2026 20:30</td><td><b>Colômbia</b> <em>x</em> <b>Portugal</b></td><td>Hard Rock Stadium, Miami</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">70</td><td>27/06/2026</td><td>19:30</td><td class="brt">27/06/2026 20:30</td><td><b>RD Congo</b> <em>x</em> <b>Uzbequistão</b></td><td>Mercedes-Benz Stadium, Atlanta</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo K:</b> Colômbia 3 pts (J1, SG +2); Portugal 1 pt (J1, SG 0); RD Congo 1 pt (J1, SG 0); Uzbequistão 0 pt (J1, SG -2).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo K</div><p>A Colômbia lidera o Grupo K após vencer o Uzbequistão por 3 x 1. Portugal e RD Congo empataram por 1 x 1 e dividem a segunda posição, enquanto o Uzbequistão precisa reagir.</p><div class='tagrow'><span class='tag'>Colômbia líder</span><span class='tag'>Portugal e RD Congo empatados</span><span class='tag'>Uzbequistão em atenção</span><span class='tag'>Grupo aberto</span></div></div></section><section class="group-card" id="grupo-L">
+<div class="group-head"><div><div class="eyebrow">FASE DE GRUPOS</div><h2>Grupo L</h2><div class="teams"><span>Inglaterra</span><span>Croácia</span><span>Gana</span><span>Panamá</span></div></div><div class="big-letter">L</div></div>
+<div class="table-wrap"><table><thead><tr><th>Jogo</th><th>Data</th><th>Hora local</th><th>Brasília</th><th>Confronto</th><th>Estádio</th><th>Placar</th><th>Status</th><th>Gols / Cartões</th></tr></thead><tbody><tr><td class="num">22</td><td>17/06/2026</td><td>15:00</td><td class="brt">17/06/2026 17:00</td><td><b>Inglaterra</b> <em>x</em> <b>Croácia</b></td><td>AT&amp;T Stadium, Dallas</td><td class="score">4 x 2</td><td class="Finalizado">Finalizado</td><td class="details">Gols: Harry Kane 12’ pên. e 42’, Jude Bellingham 47’ e Marcus Rashford 85’ (ENG); Martin Baturina 36’ e Petar Musa 50’ (CRO). Cartões: pendente de consolidação oficial. Público: 70.389 espectadores.</td></tr><tr><td class="num">23</td><td>17/06/2026</td><td>19:00</td><td class="brt">17/06/2026 20:00</td><td><b>Gana</b> <em>x</em> <b>Panamá</b></td><td>BMO Field, Toronto</td><td class="score">1 x 0</td><td class="Finalizado">Finalizado</td><td class="details">Gol: Caleb Yirenkyi 90+5’ (GHA). Cartões: pendente de consolidação oficial. Público: 42.942 espectadores.</td></tr><tr><td class="num">46</td><td>23/06/2026</td><td>16:00</td><td class="brt">23/06/2026 17:00</td><td><b>Inglaterra</b> <em>x</em> <b>Gana</b></td><td>Gillette Stadium, Boston</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">47</td><td>23/06/2026</td><td>19:00</td><td class="brt">23/06/2026 20:00</td><td><b>Panamá</b> <em>x</em> <b>Croácia</b></td><td>BMO Field, Toronto</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">67</td><td>27/06/2026</td><td>17:00</td><td class="brt">27/06/2026 18:00</td><td><b>Panamá</b> <em>x</em> <b>Inglaterra</b></td><td>MetLife Stadium, New Jersey</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr><tr><td class="num">68</td><td>27/06/2026</td><td>17:00</td><td class="brt">27/06/2026 18:00</td><td><b>Croácia</b> <em>x</em> <b>Gana</b></td><td>Lincoln Financial Field, Philadelphia</td><td class="score">—</td><td class="Programado">Programado</td><td class="details">—</td></tr></tbody></table></div>
+<div class="notice" style="margin:18px"><b>Classificação — Grupo L:</b> Inglaterra 3 pts (J1, SG +2); Gana 3 pts (J1, SG +1); Croácia 0 pt (J1, SG -2); Panamá 0 pt (J1, SG -1).</div><div class='group-summary'><div class='summary-title'>📌 Resumo executivo do Grupo L</div><p>Inglaterra e Gana venceram na estreia. A Inglaterra lidera pelo saldo após o 4 x 2 sobre a Croácia, enquanto Gana superou o Panamá por 1 x 0 com gol nos acréscimos.</p><div class='tagrow'><span class='tag'>Inglaterra líder</span><span class='tag'>Gana em 2º</span><span class='tag'>Kane marcou 2</span><span class='tag'>Croácia e Panamá pressionados</span></div></div></section></div></section>
+
+<section id="simulacao-mata-mata">
+<div class="notice" id="aviso-caminho-brasil" style="margin-bottom:20px">
+  🇧🇷 <b>Destaque automático do caminho do Brasil:</b> confrontos, linhas e cartões que contenham a Seleção Brasileira estão realçados em verde na simulação e no chaveamento.
+</div>
+
+  <div class="section-title">
+    <div>
+      <h2>Simulação do Mata-Mata</h2>
+      <p class="sub">Projeção dinâmica baseada exclusivamente no desempenho apresentado durante a Copa, na qualidade dos adversários enfrentados, no controle das partidas, na consistência tática e na avaliação predominante da imprensa internacional até 22/06/2026 às 07h BRT. O saldo de gols não foi utilizado como critério de força.</p>
+    </div>
+  </div>
+
+  <div class="notice" style="margin-bottom:18px">
+    ⚠️ <b>Leitura da projeção:</b> esta simulação não representa o chaveamento confirmado. As posições ainda são provisórias e serão recalculadas após cada rodada. Os oito melhores terceiros projetados são: Escócia, Paraguai, Suécia, Bélgica, Cabo Verde, Tchéquia, Bósnia e Herzegovina e Equador.
+  </div>
+
+  <div class="exec-grid" style="margin-bottom:22px">
+    <div class="exec-card gold"><small>Campeã projetada</small><strong>França</strong><em>Atuação mais completa diante de adversário competitivo e maior equilíbrio entre criação, intensidade e profundidade do elenco.</em></div>
+    <div class="exec-card green"><small>Final projetada</small><strong>Alemanha x França</strong><em>França campeã na simulação revisada.</em></div>
+    <div class="exec-card"><small>Semifinal 1</small><strong>Alemanha x Espanha</strong><em>Alemanha avança pela maior capacidade de reação mostrada no torneio.</em></div>
+    <div class="exec-card"><small>Semifinal 2</small><strong>França x Argentina</strong><em>França avança pela atuação mais completa contra oposição de maior nível.</em></div>
+  </div>
+
+
+
+  <div class="section-title" style="margin-bottom:16px">
+    <div>
+      <h2 style="font-size:30px">Índice de Dificuldade do Caminho</h2>
+      <p class="sub">Avaliação editorial do grau de dificuldade do percurso projetado até a final, considerando a força dos possíveis adversários, o momento apresentado na Copa e a sequência provável de confrontos. O saldo de gols não foi utilizado.</p>
+    </div>
+  </div>
+
+  <div class="table-wrap" style="margin-bottom:24px">
+    <table>
+      <thead>
+        <tr>
+          <th>Seleção</th>
+          <th>Índice</th>
+          <th>Nível</th>
+          <th>Caminho projetado</th>
+          <th>Leitura executiva</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Brasil</b></td><td><b>92 / 100</b></td><td><span class="pill">Muito alto</span></td><td>Japão → França → Inglaterra → Argentina → Final</td><td>É o caminho mais duro entre as principais candidatas, com possibilidade de enfrentar quatro seleções de primeiro nível em sequência.</td></tr>
+        <tr><td><b>França</b></td><td><b>86 / 100</b></td><td><span class="pill">Muito alto</span></td><td>Costa do Marfim → Brasil → Inglaterra → Argentina → Alemanha</td><td>Mesmo sendo a campeã projetada, enfrentaria uma sequência de confrontos extremamente exigente desde as oitavas.</td></tr>
+        <tr><td><b>Inglaterra</b></td><td><b>81 / 100</b></td><td><span class="pill">Alto</span></td><td>Equador → México → França → Final</td><td>O início é administrável, mas o caminho se torna muito difícil a partir das quartas.</td></tr>
+        <tr><td><b>Argentina</b></td><td><b>78 / 100</b></td><td><span class="pill">Alto</span></td><td>Uruguai → Austrália → Canadá → França → Final</td><td>Possui uma rota inicialmente mais favorável, mas com forte elevação de dificuldade na semifinal.</td></tr>
+        <tr><td><b>Espanha</b></td><td><b>74 / 100</b></td><td><span class="pill">Alto</span></td><td>Áustria → RD Congo → Estados Unidos → Alemanha → Final</td><td>Tem caminho equilibrado até as quartas, com grande obstáculo projetado na semifinal.</td></tr>
+        <tr><td><b>Alemanha</b></td><td><b>69 / 100</b></td><td><span class="pill">Médio-alto</span></td><td>Escócia → Noruega → Holanda → Espanha → França</td><td>Enfrenta adversários competitivos, mas evita as seleções mais fortes até as fases finais.</td></tr>
+        <tr><td><b>Holanda</b></td><td><b>67 / 100</b></td><td><span class="pill">Médio-alto</span></td><td>Marrocos → Suíça → Alemanha</td><td>O primeiro confronto já exige alto nível de concentração, e a rota tende a ficar muito difícil nas quartas.</td></tr>
+        <tr><td><b>Marrocos</b></td><td><b>64 / 100</b></td><td><span class="pill">Médio-alto</span></td><td>Holanda → Suíça/Alemanha</td><td>O cruzamento inicial é desfavorável, mas sua organização defensiva pode tornar o confronto equilibrado.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="exec-grid" style="margin-bottom:24px">
+    <div class="exec-card gold"><small>Caminho mais difícil</small><strong>Brasil</strong><em>Possível sequência com França, Inglaterra e Argentina antes da final.</em></div>
+    <div class="exec-card"><small>Caminho mais equilibrado</small><strong>Alemanha</strong><em>Evita as principais favoritas até as fases mais avançadas.</em></div>
+    <div class="exec-card green"><small>Maior risco precoce</small><strong>Holanda</strong><em>Marrocos já representa um confronto de alto risco nos 16 avos.</em></div>
+    <div class="exec-card blue"><small>Rota que cresce em dificuldade</small><strong>Argentina</strong><em>Caminho administrável até as quartas, mas semifinal muito pesada.</em></div>
+  </div>
+
+  <div class="notice" style="margin-bottom:24px">
+    📌 <b>Como interpretar:</b> quanto maior o índice, mais difícil é o caminho projetado. O número não representa chance de eliminação; ele mede apenas a força acumulada dos possíveis adversários e será recalculado conforme o chaveamento mudar.
+  </div>
+
+  <div class="section-title" style="margin-bottom:16px">
+    <div>
+      <h2 style="font-size:30px">Probabilidade de Avanço e Título</h2>
+      <p class="sub">Estimativas editoriais baseadas no desempenho apresentado na Copa, na qualidade dos adversários enfrentados, no controle das partidas, na consistência tática e no caminho projetado. O saldo de gols não foi utilizado como critério de força.</p>
+    </div>
+  </div>
+
+  <div class="table-wrap" style="margin-bottom:24px">
+    <table>
+      <thead>
+        <tr>
+          <th>Seleção</th>
+          <th>16 avos</th>
+          <th>Quartas</th>
+          <th>Semifinal</th>
+          <th>Final</th>
+          <th>Título</th>
+          <th>Leitura atual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><b>França</b></td><td>96%</td><td>72%</td><td>48%</td><td>30%</td><td><b>18%</b></td><td>Atuação mais completa contra adversário competitivo; equilíbrio entre intensidade, criação e profundidade do elenco.</td></tr>
+        <tr><td><b>Alemanha</b></td><td>98%</td><td>75%</td><td>50%</td><td>29%</td><td><b>16%</b></td><td>Classificação encaminhada e forte capacidade de reação, mas a goleada sobre Curaçao teve peso reduzido na avaliação.</td></tr>
+        <tr><td><b>Argentina</b></td><td>95%</td><td>70%</td><td>46%</td><td>27%</td><td><b>15%</b></td><td>Domínio técnico, controle da partida e elevado poder de decisão individual.</td></tr>
+        <tr><td><b>Espanha</b></td><td>93%</td><td>66%</td><td>43%</td><td>25%</td><td><b>13%</b></td><td>Grande capacidade de controlar o jogo e resposta convincente após uma estreia abaixo do esperado.</td></tr>
+        <tr><td><b>Inglaterra</b></td><td>92%</td><td>64%</td><td>40%</td><td>22%</td><td><b>11%</b></td><td>Produção ofensiva de alto nível contra a Croácia, com atenção para a vulnerabilidade defensiva.</td></tr>
+        <tr><td><b>Brasil</b></td><td>94%</td><td>61%</td><td>35%</td><td>18%</td><td><b>9%</b></td><td>Evolução clara na segunda rodada e teste relevante contra Marrocos, mas caminho projetado de alta dificuldade.</td></tr>
+        <tr><td><b>Holanda</b></td><td>90%</td><td>57%</td><td>33%</td><td>16%</td><td><b>7%</b></td><td>Maior evolução entre a primeira e a segunda partida, com variedade e intensidade ofensiva.</td></tr>
+        <tr><td><b>Marrocos</b></td><td>83%</td><td>43%</td><td>21%</td><td>10%</td><td><b>4%</b></td><td>Organização, disciplina e competitividade contra o Brasil; menor profundidade de elenco reduz a projeção de título.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice" style="margin-bottom:24px">
+    📌 <b>Metodologia:</b> os percentuais são estimativas editoriais, não probabilidades oficiais. Eles serão recalculados diariamente conforme resultados, atuações, adversários, posições nos grupos e alterações no caminho do mata-mata. Os valores são arredondados e as seleções não listadas completam o universo de possibilidades.
+  </div>
+
+  <div class="section-title" style="margin-bottom:16px">
+    <div>
+      <h2 style="font-size:30px">16 Avos Projetados</h2>
+      <p class="sub">Confrontos simulados conforme as posições atuais, sem utilizar saldo de gols como critério de favoritismo.</p>
+    </div>
+  </div>
+
+  <div class="table-wrap" style="margin-bottom:24px">
+    <table>
+      <thead>
+        <tr><th>Jogo</th><th>Confronto projetado</th><th>Classificado projetado</th><th>Justificativa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">73</td><td>Coreia do Sul x Suíça</td><td><b>Suíça</b></td><td>Apresentou maior controle coletivo e uma atuação mais consistente diante da Bósnia.</td></tr>
+        <tr><td class="num">74</td><td>Alemanha x Escócia</td><td><b>Alemanha</b></td><td>Mesmo sem valorizar a goleada sobre Curaçao, mostrou poder de reação e pressão até o fim contra a Costa do Marfim.</td></tr>
+        <tr><td class="num">75</td><td>Holanda x Marrocos</td><td><b>Holanda</b></td><td>Evoluiu fortemente entre os jogos e apresentou maior variedade ofensiva contra a Suécia.</td></tr>
+        <tr><td class="num">76</td><td>Brasil x Japão</td><td><b>Brasil</b></td><td>Teve um teste mais forte contra Marrocos e mostrou evolução clara na segunda partida.</td></tr>
+        <tr><td class="num">77</td><td>Noruega x Cabo Verde</td><td><b>Noruega</b></td><td>Demonstrou maior poder de imposição e eficiência ofensiva na estreia.</td></tr>
+        <tr><td class="num">78</td><td>Costa do Marfim x França</td><td><b>França</b></td><td>Entregou a atuação mais completa entre as favoritas contra um adversário competitivo.</td></tr>
+        <tr><td class="num">79</td><td>México x Suécia</td><td><b>México</b></td><td>Mostrou maior equilíbrio, segurança sem a bola e capacidade de controlar jogos apertados.</td></tr>
+        <tr><td class="num">80</td><td>Inglaterra x Equador</td><td><b>Inglaterra</b></td><td>Produziu uma das melhores atuações ofensivas do torneio contra a experiente Croácia.</td></tr>
+        <tr><td class="num">81</td><td>Estados Unidos x Bósnia e Herzegovina</td><td><b>Estados Unidos</b></td><td>Foi mais intenso, agressivo e consistente nas duas primeiras rodadas.</td></tr>
+        <tr><td class="num">82</td><td>Egito x Tchéquia</td><td><b>Egito</b></td><td>Cresceu durante a competição e apresentou maior capacidade de reação e decisão.</td></tr>
+        <tr><td class="num">83</td><td>RD Congo x Croácia</td><td><b>RD Congo</b></td><td>Competiu em nível mais alto contra Portugal, enquanto a Croácia mostrou fragilidade defensiva diante da Inglaterra.</td></tr>
+        <tr><td class="num">84</td><td>Espanha x Áustria</td><td><b>Espanha</b></td><td>Reagiu de forma convincente após a estreia e demonstrou maior capacidade de controlar o jogo com a bola.</td></tr>
+        <tr><td class="num">85</td><td>Canadá x Bélgica</td><td><b>Canadá</b></td><td>Apresentou futebol mais agressivo e produtivo, enquanto a Bélgica ainda não encontrou fluidez ofensiva.</td></tr>
+        <tr><td class="num">86</td><td>Argentina x Uruguai</td><td><b>Argentina</b></td><td>Foi dominante, organizada e decisiva na estreia, com Messi em alto nível.</td></tr>
+        <tr><td class="num">87</td><td>Portugal x Paraguai</td><td><b>Paraguai</b></td><td>Mostrou maior competitividade e capacidade de sustentar vantagem; Portugal decepcionou diante da RD Congo.</td></tr>
+        <tr><td class="num">88</td><td>Austrália x Irã</td><td><b>Austrália</b></td><td>Apresentou maior objetividade e já demonstrou capacidade de vencer sob pressão.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-title" style="margin-bottom:16px">
+    <div>
+      <h2 style="font-size:30px">Caminho Projetado até a Final</h2>
+      <p class="sub">Continuidade da simulação com justificativa para cada classificado projetado.</p>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Fase</th><th>Jogo</th><th>Confronto projetado</th><th>Vencedor projetado</th><th>Justificativa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Oitavas</td><td class="num">89</td><td>Alemanha x Noruega</td><td><b>Alemanha</b></td><td>Maior capacidade de reação e pressão sustentada em partidas difíceis.</td></tr>
+        <tr><td>Oitavas</td><td class="num">90</td><td>Suíça x Holanda</td><td><b>Holanda</b></td><td>Maior evolução durante a Copa e superioridade na criação ofensiva.</td></tr>
+        <tr><td>Oitavas</td><td class="num">91</td><td>Brasil x França</td><td><b>França</b></td><td>A França apresentou até agora uma atuação mais completa contra adversário de maior exigência.</td></tr>
+        <tr><td>Oitavas</td><td class="num">92</td><td>México x Inglaterra</td><td><b>Inglaterra</b></td><td>Maior capacidade de decidir e criar oportunidades contra uma seleção experiente.</td></tr>
+        <tr><td>Oitavas</td><td class="num">93</td><td>RD Congo x Espanha</td><td><b>Espanha</b></td><td>Maior controle territorial e melhor resposta após uma estreia abaixo do esperado.</td></tr>
+        <tr><td>Oitavas</td><td class="num">94</td><td>Estados Unidos x Egito</td><td><b>Estados Unidos</b></td><td>Ritmo mais alto, intensidade constante e maior regularidade nas duas rodadas.</td></tr>
+        <tr><td>Oitavas</td><td class="num">95</td><td>Argentina x Austrália</td><td><b>Argentina</b></td><td>Maior domínio técnico, controle de jogo e capacidade individual de decisão.</td></tr>
+        <tr><td>Oitavas</td><td class="num">96</td><td>Canadá x Paraguai</td><td><b>Canadá</b></td><td>Futebol mais propositivo, melhor ocupação ofensiva e maior volume de criação.</td></tr>
+        <tr><td>Quartas</td><td class="num">97</td><td>Alemanha x Holanda</td><td><b>Alemanha</b></td><td>Leve vantagem pela capacidade de competir e reagir em jogos de maior tensão.</td></tr>
+        <tr><td>Quartas</td><td class="num">98</td><td>Espanha x Estados Unidos</td><td><b>Espanha</b></td><td>Maior capacidade de controlar posse, ritmo e território diante de pressão alta.</td></tr>
+        <tr><td>Quartas</td><td class="num">99</td><td>França x Inglaterra</td><td><b>França</b></td><td>Maior equilíbrio entre ataque, defesa e profundidade do banco.</td></tr>
+        <tr><td>Quartas</td><td class="num">100</td><td>Argentina x Canadá</td><td><b>Argentina</b></td><td>Superioridade técnica e maior capacidade de administrar diferentes momentos da partida.</td></tr>
+        <tr><td>Semifinal</td><td class="num">101</td><td>Alemanha x Espanha</td><td><b>Alemanha</b></td><td>Mostrou maior resiliência e capacidade de vencer mesmo quando não domina toda a partida.</td></tr>
+        <tr><td>Semifinal</td><td class="num">102</td><td>França x Argentina</td><td><b>França</b></td><td>Apresentou o futebol mais completo diante de oposição forte e possui mais alternativas durante o jogo.</td></tr>
+        <tr><td>3º lugar</td><td class="num">103</td><td>Espanha x Argentina</td><td><b>Argentina</b></td><td>Maior poder de decisão individual e melhor controle emocional demonstrado até aqui.</td></tr>
+        <tr><td>Final</td><td class="num">104</td><td>Alemanha x França</td><td><b>França campeã</b></td><td>Projeção baseada no melhor equilíbrio apresentado entre intensidade, criação, defesa e qualidade do adversário enfrentado.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="group-summary" style="margin:20px 0 0">
+    <div class="summary-title">🇧🇷 Caminho projetado do Brasil</div>
+    <p><b>16 avos:</b> Japão → <b>Oitavas:</b> França. Na simulação revisada, o Brasil avança da primeira fase eliminatória, mas é superado pela França, atualmente avaliada como a seleção de desempenho mais completo entre as principais candidatas.</p>
+    <div class="tagrow">
+      <span class="tag">Sem uso do saldo de gols</span>
+      <span class="tag">Leitura da imprensa internacional</span>
+      <span class="tag">Qualidade dos adversários considerada</span>
+      <span class="tag">Não representa resultado oficial</span>
+    </div>
+  </div>
+</section>
+
+<section id="mata-mata">
+  <div class="section-title">
+    <div>
+      <h2>Fase de Mata-Mata</h2>
+      <p class="sub">Chaveamento completo da Copa 2026, com todos os confrontos eliminatórios dos jogos 73 a 104 e o campeão destacado ao centro. Nenhum classificado matemático até esta atualização.</p>
+    </div>
+  </div>
+  <div class="legend"><span class="projected">Projetado: vaga por posição do grupo</span><span class="confirmed">Confirmado: seleção matematicamente definida</span><span class="open">Em aberto: fase de grupos em andamento</span></div>
+  <div class="bracket-wrap">
+    <div class="bracket complete-centered">
+      <div class="bracket-col"><div class="round-title">16 AVOS • LADO ESQUERDO</div><div class='match'><div class='match-top'><span>Jogo 73</span><strong>28/06/2026</strong></div><div class='team'>2º Grupo A<span></span></div><div class='team'>2º Grupo B<span></span></div><div class='venue'>16 avos • 28/06/2026 • 16:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 74</span><strong>29/06/2026</strong></div><div class='team'>1º Grupo E<span></span></div><div class='team'>3º Grupo A/B/C/D/F<span></span></div><div class='venue'>16 avos • 29/06/2026 • 17:30 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 75</span><strong>29/06/2026</strong></div><div class='team'>1º Grupo F<span></span></div><div class='team'>2º Grupo C<span></span></div><div class='venue'>16 avos • 29/06/2026 • 22:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 76</span><strong>29/06/2026</strong></div><div class='team'>1º Grupo C<span></span></div><div class='team'>2º Grupo F<span></span></div><div class='venue'>16 avos • 29/06/2026 • 14:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 77</span><strong>30/06/2026</strong></div><div class='team'>1º Grupo I<span></span></div><div class='team'>3º Grupo C/D/F/G/H<span></span></div><div class='venue'>16 avos • 30/06/2026 • 18:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 78</span><strong>30/06/2026</strong></div><div class='team'>2º Grupo E<span></span></div><div class='team'>2º Grupo I<span></span></div><div class='venue'>16 avos • 30/06/2026 • 14:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 79</span><strong>30/06/2026</strong></div><div class='team'>1º Grupo A<span></span></div><div class='team'>3º Grupo C/E/F/H/I<span></span></div><div class='venue'>16 avos • 30/06/2026 • 22:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 80</span><strong>01/07/2026</strong></div><div class='team'>1º Grupo L<span></span></div><div class='team'>3º Grupo E/H/I/J/K<span></span></div><div class='venue'>16 avos • 01/07/2026 • 13:00 BRT</div></div></div>
+      <div class="bracket-col tight"><div class="round-title">OITAVAS</div><div class='match'><div class='match-top'><span>Jogo 89</span><strong>04/07/2026</strong></div><div class='team'>Vencedor J74<span></span></div><div class='team'>Vencedor J77<span></span></div><div class='venue'>Oitavas • 04/07/2026 • 18:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 90</span><strong>04/07/2026</strong></div><div class='team'>Vencedor J73<span></span></div><div class='team'>Vencedor J75<span></span></div><div class='venue'>Oitavas • 04/07/2026 • 14:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 91</span><strong>05/07/2026</strong></div><div class='team'>Vencedor J76<span></span></div><div class='team'>Vencedor J78<span></span></div><div class='venue'>Oitavas • 05/07/2026 • 17:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 92</span><strong>05/07/2026</strong></div><div class='team'>Vencedor J79<span></span></div><div class='team'>Vencedor J80<span></span></div><div class='venue'>Oitavas • 05/07/2026 • 21:00 BRT</div></div></div>
+      <div class="bracket-col tight"><div class="round-title">QUARTAS</div><div class='match'><div class='match-top'><span>Jogo 97</span><strong>09/07/2026</strong></div><div class='team'>Vencedor J89<span></span></div><div class='team'>Vencedor J90<span></span></div><div class='venue'>Quartas • 09/07/2026 • 17:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 98</span><strong>10/07/2026</strong></div><div class='team'>Vencedor J93<span></span></div><div class='team'>Vencedor J94<span></span></div><div class='venue'>Quartas • 10/07/2026 • 16:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 101</span><strong>14/07/2026</strong></div><div class='team'>Vencedor J97<span></span></div><div class='team'>Vencedor J98<span></span></div><div class='venue'>Semifinal • 14/07/2026 • 16:00 BRT</div></div></div>
+      <div class="bracket-col center">
+        <div class="round-title">FINAL</div>
+        <div class='match'><div class='match-top'><span>Jogo 104</span><strong>19/07/2026</strong></div><div class='team'>Vencedor J101<span></span></div><div class='team'>Vencedor J102<span></span></div><div class='venue'>Final • 19/07/2026 • 16:00 BRT</div></div>
+        <div class="champion-center"><div class="cup">🏆</div><b>CAMPEÃO</b><div class="blank">A definir</div><div class="connector-note">Vencedor do Jogo 104</div></div>
+        <div class='match'><div class='match-top'><span>Jogo 103</span><strong>18/07/2026</strong></div><div class='team'>Perdedor J101<span></span></div><div class='team'>Perdedor J102<span></span></div><div class='venue'>3º lugar • 18/07/2026 • 18:00 BRT</div></div>
+      </div>
+      <div class="bracket-col tight"><div class="round-title">QUARTAS</div><div class='match'><div class='match-top'><span>Jogo 99</span><strong>11/07/2026</strong></div><div class='team'>Vencedor J91<span></span></div><div class='team'>Vencedor J92<span></span></div><div class='venue'>Quartas • 11/07/2026 • 18:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 100</span><strong>12/07/2026</strong></div><div class='team'>Vencedor J95<span></span></div><div class='team'>Vencedor J96<span></span></div><div class='venue'>Quartas • 12/07/2026 • 22:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 102</span><strong>15/07/2026</strong></div><div class='team'>Vencedor J99<span></span></div><div class='team'>Vencedor J100<span></span></div><div class='venue'>Semifinal • 15/07/2026 • 16:00 BRT</div></div></div>
+      <div class="bracket-col tight"><div class="round-title">OITAVAS</div><div class='match'><div class='match-top'><span>Jogo 93</span><strong>06/07/2026</strong></div><div class='team'>Vencedor J83<span></span></div><div class='team'>Vencedor J84<span></span></div><div class='venue'>Oitavas • 06/07/2026 • 16:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 94</span><strong>06/07/2026</strong></div><div class='team'>Vencedor J81<span></span></div><div class='team'>Vencedor J82<span></span></div><div class='venue'>Oitavas • 06/07/2026 • 21:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 95</span><strong>07/07/2026</strong></div><div class='team'>Vencedor J86<span></span></div><div class='team'>Vencedor J88<span></span></div><div class='venue'>Oitavas • 07/07/2026 • 13:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 96</span><strong>07/07/2026</strong></div><div class='team'>Vencedor J85<span></span></div><div class='team'>Vencedor J87<span></span></div><div class='venue'>Oitavas • 07/07/2026 • 17:00 BRT</div></div></div>
+      <div class="bracket-col"><div class="round-title">16 AVOS • LADO DIREITO</div><div class='match'><div class='match-top'><span>Jogo 81</span><strong>01/07/2026</strong></div><div class='team'>1º Grupo D<span></span></div><div class='team'>3º Grupo B/E/F/I/J<span></span></div><div class='venue'>16 avos • 01/07/2026 • 21:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 82</span><strong>01/07/2026</strong></div><div class='team'>1º Grupo G<span></span></div><div class='team'>3º Grupo A/E/H/I/J<span></span></div><div class='venue'>16 avos • 01/07/2026 • 17:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 83</span><strong>02/07/2026</strong></div><div class='team'>2º Grupo K<span></span></div><div class='team'>2º Grupo L<span></span></div><div class='venue'>16 avos • 02/07/2026 • 20:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 84</span><strong>02/07/2026</strong></div><div class='team'>1º Grupo H<span></span></div><div class='team'>2º Grupo J<span></span></div><div class='venue'>16 avos • 02/07/2026 • 16:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 85</span><strong>03/07/2026</strong></div><div class='team'>1º Grupo B<span></span></div><div class='team'>3º Grupo E/F/G/I/J<span></span></div><div class='venue'>16 avos • 03/07/2026 • 00:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 86</span><strong>03/07/2026</strong></div><div class='team'>1º Grupo J<span></span></div><div class='team'>2º Grupo H<span></span></div><div class='venue'>16 avos • 03/07/2026 • 19:00 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 87</span><strong>03/07/2026</strong></div><div class='team'>1º Grupo K<span></span></div><div class='team'>3º Grupo D/E/I/J/L<span></span></div><div class='venue'>16 avos • 03/07/2026 • 22:30 BRT</div></div><div class='match'><div class='match-top'><span>Jogo 88</span><strong>03/07/2026</strong></div><div class='team'>2º Grupo D<span></span></div><div class='team'>2º Grupo G<span></span></div><div class='venue'>16 avos • 03/07/2026 • 15:00 BRT</div></div></div>
+    </div>
+  </div>
+  <div class="notice" style="margin-top:20px"><b>Sem alteração definitiva:</b> ainda não há classificados para a fase eliminatória. O campeão ficará automaticamente identificado no centro quando o Jogo 104 for atualizado.</div>
+</section><section><div class="section-title"><div><h2>Notas</h2><p class="sub">Agenda completa restaurada a partir da versão-base com 72 jogos. Cartões foram incluídos somente quando confirmados ou reportados; onde a súmula detalhada não estava disponível, o campo permanece sinalizado como pendente de validação oficial.</p></div></div></section>
+
+<a class="to-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Topo</a>
+<script>
+(function(){
+  const groupStats={
+    'grupo-A':['Líder: México','Classificação: México e Coreia','Alerta: Tchéquia e África do Sul'],
+    'grupo-B':['Líder: indefinido','Classificação: todos empatados','Jogo-chave: próxima rodada'],
+    'grupo-C':['Líder: Escócia','Brasil: 2º lugar','Alerta: Haiti pressionado'],
+    'grupo-D':['Líder: Estados Unidos','Classificação: EUA e Austrália','Alerta: Turquia e Paraguai'],
+    'grupo-E':['Líder: Alemanha','Classificação: Alemanha e Costa do Marfim','Pressão: Equador e Curaçao'],
+    'grupo-F':['Líder: Suécia','Classificação: Suécia e Holanda/Japão','Alerta: Tunísia'],
+    'grupo-G':['Líder: Irã pelo GP','Todos com 1 ponto','Disputa aberta'],
+    'grupo-H':['Líder: Arábia Saudita pelo GP','Todos com 1 ponto','Cabo Verde surpreende'],
+    'grupo-I':['Líder: Noruega pelo saldo','Classificação: Noruega e França','Pressão: Senegal e Iraque'],
+    'grupo-J':['Líder: Argentina pelo saldo','Classificação: Argentina e Áustria','Pressão: Jordânia e Argélia'],
+    'grupo-K':['Estreia pendente','Favoritos em observação','Sem definição'],
+    'grupo-L':['Estreia pendente','Favoritos em observação','Sem definição']
+  };
+  Object.entries(groupStats).forEach(([id,items])=>{const el=document.getElementById(id); if(!el||el.querySelector('.mini-stats')) return; const box=document.createElement('div'); box.className='mini-stats'; box.innerHTML=items.map((x,i)=>`<div class="mini-stat"><small>${i==0?'Leitura':'Indicador'}</small><b>${x}</b></div>`).join(''); const sum=el.querySelector('.group-summary'); if(sum) sum.insertAdjacentElement('beforebegin',box);});
+  document.querySelectorAll('#grupos tbody tr').forEach(tr=>{const t=tr.innerText; if(t.includes('22/06/2026')) tr.classList.add('today-game');});
+  document.querySelectorAll('.bracket .match').forEach(m=>m.classList.add('is-projected'));
+  const buttons=document.querySelectorAll('.filter-btn');
+  buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const f=btn.dataset.filter; document.querySelectorAll('#grupos tbody tr').forEach(tr=>{const text=tr.innerText.toLowerCase(); const groupCard=tr.closest('.group-card'); let show=true; if(f==='finalizados') show=text.includes('finalizado'); if(f==='hoje') show=tr.classList.contains('today-game'); if(f==='proximos') show=text.includes('programado'); if(f==='brasil') show=text.includes('brasil'); if(f==='decisivos') show=['grupo-a','grupo-b','grupo-c','grupo-d','grupo-e','grupo-f'].includes(groupCard?.id); tr.classList.toggle('hidden-by-filter',!show);}); document.querySelectorAll('.group-card').forEach(card=>{const visible=[...card.querySelectorAll('tbody tr')].some(r=>!r.classList.contains('hidden-by-filter')); card.style.display=visible?'':'none';});}));
+})();
+</script>
+
+<section id="log-atualizacoes">
+  <div class="section-title"><div><h2>Log de Atualizações</h2><p class="sub">Rastreabilidade executiva das mudanças aplicadas nesta versão Pro.</p></div></div>
+  <div class="log-grid">
+    <div class="log-card"><small>19/06/2026 • 07h BRT</small><b>Resultados de 18/06 consolidados</b><p>Grupos A e B, artilharia, KPIs e resumos foram atualizados nesta versão.</p></div>
+    <div class="log-card"><small>Versão Pro</small><b>Modo Diretoria incluído</b><p>Nova visão condensada para leitura rápida em reunião ou envio executivo.</p></div>
+    <div class="log-card"><small>Camada analítica</small><b>Cenários e Power Ranking</b><p>Incluídos cenários por grupo e ranking de força baseado no desempenho inicial.</p></div>
+    <div class="log-card"><small>Governança visual</small><b>Impressão/PDF</b><p>CSS de impressão adicionado para gerar resumo executivo limpo em PDF.</p></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  const full=document.getElementById('modeFull');
+  const board=document.getElementById('modeBoard');
+  function setMode(mode){
+    document.body.classList.toggle('board-mode', mode==='board');
+    full?.classList.toggle('active', mode==='full');
+    board?.classList.toggle('active', mode==='board');
+    try{localStorage.setItem('copa2026_mode',mode)}catch(e){}
+  }
+  full?.addEventListener('click',()=>setMode('full'));
+  board?.addEventListener('click',()=>setMode('board'));
+  try{setMode(localStorage.getItem('copa2026_mode')||'full')}catch(e){setMode('full')}
+})();
+</script>
+
+<section id="metodologia-fontes">
+  <div class="section-title"><div><h2>Metodologia e Fontes</h2><p class="sub">Critérios utilizados para organizar dados oficiais e produzir análises editoriais.</p></div></div>
+  <div class="method-grid">
+    <div class="method-card"><h3>Resultados e classificação</h3><p>Placares, agenda, classificação e chaveamento são consolidados a partir das informações oficiais da competição e atualizados em horário de Brasília.</p></div>
+    <div class="method-card"><h3>Simulação do mata-mata</h3><p>Considera desempenho apresentado na Copa, qualidade dos adversários, controle das partidas, consistência tática e avaliação predominante da imprensa internacional. Não representa previsão oficial.</p></div>
+    <div class="method-card"><h3>Probabilidades</h3><p>São estimativas editoriais arredondadas, recalculadas conforme resultados, posições nos grupos e mudanças no caminho projetado.</p></div>
+    <div class="method-card"><h3>Dificuldade do caminho</h3><p>Mede a força acumulada dos possíveis adversários. Não representa chance direta de eliminação.</p></div>
+    <div class="method-card"><h3>Público</h3><p>Os números de espectadores são consolidados por partida finalizada. Médias e totais são calculados diretamente a partir desses registros.</p></div>
+    <div class="method-card"><h3>Fontes editoriais</h3><p>Leituras de desempenho utilizam cobertura de veículos internacionais de imprensa e análises publicadas após os jogos, sem reproduzir conteúdo integral.</p></div>
+  </div>
+  <div class="notice" style="margin-top:18px">Última atualização consolidada: <b>22/06/2026 às 07h BRT</b>. Projeções, índices e probabilidades são análises editoriais e não dados oficiais da FIFA.</div>
+</section>
+
+
+<script>
+(function(){
+  const teams = {
+    "França": {campanha:"1 vitória em 1 jogo", imprensa:"Atuação mais completa contra adversário competitivo", titulo:"18%", dificuldade:"86/100", pressao:"Moderada", caminho:"Costa do Marfim → Brasil → Inglaterra → Argentina → Alemanha"},
+    "Alemanha": {campanha:"2 vitórias em 2 jogos", imprensa:"Resiliência e forte reação; goleada sobre Curaçao com peso reduzido", titulo:"16%", dificuldade:"69/100", pressao:"Confortável", caminho:"Escócia → Noruega → Holanda → Espanha → França"},
+    "Argentina": {campanha:"2 vitórias em 2 jogos", imprensa:"Domínio técnico e alto poder de decisão", titulo:"15%", dificuldade:"78/100", pressao:"Baixa", caminho:"Uruguai → Austrália → Canadá → França → Final"},
+    "Espanha": {campanha:"1 vitória e 1 empate", imprensa:"Resposta dominante após estreia abaixo do esperado", titulo:"13%", dificuldade:"74/100", pressao:"Moderada", caminho:"Áustria → RD Congo → Estados Unidos → Alemanha → Final"},
+    "Inglaterra": {campanha:"1 vitória em 1 jogo", imprensa:"Grande produção ofensiva; defesa ainda sob observação", titulo:"11%", dificuldade:"81/100", pressao:"Moderada", caminho:"Equador → México → França → Final"},
+    "Brasil": {campanha:"1 vitória e 1 empate", imprensa:"Evolução clara e teste forte contra Marrocos", titulo:"9%", dificuldade:"92/100", pressao:"Moderada", caminho:"Japão → França → Inglaterra → Argentina → Final"},
+    "Holanda": {campanha:"1 vitória e 1 empate", imprensa:"Maior evolução entre a primeira e a segunda rodada", titulo:"7%", dificuldade:"67/100", pressao:"Moderada", caminho:"Marrocos → Suíça → Alemanha"},
+    "Marrocos": {campanha:"1 vitória e 1 empate", imprensa:"Organização e competitividade contra adversários fortes", titulo:"4%", dificuldade:"64/100", pressao:"Moderada", caminho:"Holanda → Suíça/Alemanha"}
+  };
+  const a=document.getElementById("teamA"), b=document.getElementById("teamB"), ca=document.getElementById("compareA"), cb=document.getElementById("compareB");
+  function fill(sel){Object.keys(teams).forEach(n=>{const o=document.createElement("option");o.value=n;o.textContent=n;sel.appendChild(o);});}
+  function card(name){const t=teams[name];return `<h3>${name}</h3><div class="compare-row"><span>Campanha</span><b>${t.campanha}</b></div><div class="compare-row"><span>Leitura da imprensa</span><b>${t.imprensa}</b></div><div class="compare-row"><span>Chance de título</span><b>${t.titulo}</b></div><div class="compare-row"><span>Dificuldade</span><b>${t.dificuldade}</b></div><div class="compare-row"><span>Pressão</span><b>${t.pressao}</b></div><div class="compare-row"><span>Caminho projetado</span><b>${t.caminho}</b></div>`;}
+  if(a&&b){fill(a);fill(b);a.value="Brasil";b.value="França";const render=()=>{ca.innerHTML=card(a.value);cb.innerHTML=card(b.value)};a.addEventListener("change",render);b.addEventListener("change",render);render();}
+  ["simulacao-mata-mata","mata-mata"].forEach(id=>{
+    const sec=document.getElementById(id); if(!sec)return;
+    sec.querySelectorAll("tr,.match,.exec-card,.group-summary").forEach(el=>{
+      if(el.textContent.includes("Brasil")){
+        el.classList.add("brazil-path-highlight");
+        const target=el.querySelector("b,strong,.team") || el;
+        if(target && !el.querySelector(".brazil-path-label")) target.insertAdjacentHTML("beforeend",'<span class="brazil-path-label">CAMINHO DO BRASIL</span>');
+      }
+    });
+  });
+})();
+</script>
+
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js").catch((error) => {
+      console.warn("Falha ao registrar o service worker:", error);
+    });
+  });
+}
+</script>
+
+</body></html>
